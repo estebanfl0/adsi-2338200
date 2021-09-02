@@ -7,7 +7,7 @@ Proceso ejercicio28
 	//Definición de variables
 	Definir Horas_trabajadas Como Entero;
 	Definir Nombre_trabajador como cadena;
-	Definir Valor_hora, total_pagar Como Real;
+	Definir Valor_hora, total_pagar, horas_extras Como Real;
 	
 	
 	//Salida 
@@ -25,10 +25,11 @@ Proceso ejercicio28
 	
 	//Proceso 
 	Si (Horas_trabajadas > 40) Entonces
-		total_pagar <- (Valor_hora + 10000) * Horas_trabajadas;
+		total_pagar <- 40 * Valor_hora;
+		horas_extras <- (Valor_hora + 10000) * (Horas_trabajadas - 40);
 		Escribir "Su salario semanal fue de ", total_pagar, " incluido el pago de horas extra";
 	SiNo 
 		total_pagar <- (Valor_hora * Horas_trabajadas);
-		Escribir "Su salario semanal fue de ", total_pagar;
+		Escribir "Su salario semanal fue de ", total_pagar, " mas la horas extra en total es ", horas_extras;
 	FinSi
 FinProceso
