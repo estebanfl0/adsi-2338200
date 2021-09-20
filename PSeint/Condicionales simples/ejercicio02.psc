@@ -6,7 +6,7 @@ Proceso ejercicio02
 	//400 metros cuadrados se hace un descuento del 10%.
 	
 	//Declaración de variables
-	Definir largo, ancho, valor_metro2, area, Con_descuento, Sin_decuento Como Real;
+	Definir largo, ancho, valor_metro2, area, total_pagar Como Real;
 	
 	//Salida
 	Escribir "Digite el largo del terreno";
@@ -18,14 +18,16 @@ Proceso ejercicio02
 	
 	//Proceso 
 	area <- (largo * ancho);
-	Sin_decuento <- (area * valor_metro2);
-	Escribir "Su total a pagar es de ", Sin_decuento;
+	total_pagar <- (area * valor_metro2);
+	
 	
 	Si (area > 400) Entonces
-		Con_descuento <- Sin_decuento - (Sin_decuento * 10 / 100);
-		Escribir "Y menos el 10% de descuento, su total a pagar es de ", Con_descuento;
+		
+		total_pagar <- total_pagar - (total_pagar * 10 / 100);
+		
 	FinSi
 	
-
+	Escribir "Su total a pagar es de ", total_pagar;
+	
 	
 FinProceso

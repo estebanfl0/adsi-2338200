@@ -14,7 +14,6 @@ Proceso Ejercicio02_Condicionales_dobles
 		total_pagar <- horas_extra + (40 * 16);
 		Escribir "Su total a pagar es de ", total_pagar, "$, incluidas las horas extra.";
 	SiNo
-		horas_extra <- 0;
 		total_pagar <- horas * 16;
 		Escribir "Su total a pagar es de ", total_pagar,"$.";
 		
