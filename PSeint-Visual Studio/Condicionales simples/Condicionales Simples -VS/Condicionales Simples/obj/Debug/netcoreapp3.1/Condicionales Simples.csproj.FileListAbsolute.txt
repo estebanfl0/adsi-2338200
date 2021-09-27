@@ -1,0 +1,14 @@
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\bin\Debug\netcoreapp3.1\Condicionales Simples.exe
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\bin\Debug\netcoreapp3.1\Condicionales Simples.deps.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\bin\Debug\netcoreapp3.1\Condicionales Simples.runtimeconfig.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\bin\Debug\netcoreapp3.1\Condicionales Simples.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\bin\Debug\netcoreapp3.1\Condicionales Simples.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\bin\Debug\netcoreapp3.1\Condicionales Simples.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\obj\Debug\netcoreapp3.1\Condicionales Simples.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\obj\Debug\netcoreapp3.1\Condicionales Simples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\obj\Debug\netcoreapp3.1\Condicionales Simples.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\obj\Debug\netcoreapp3.1\Condicionales Simples.AssemblyInfo.cs
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\obj\Debug\netcoreapp3.1\Condicionales Simples.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\obj\Debug\netcoreapp3.1\Condicionales Simples.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\obj\Debug\netcoreapp3.1\Condicionales Simples.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condicionales simples\Condicionales Simples\Condicionales Simples\obj\Debug\netcoreapp3.1\Condicionales Simples.genruntimeconfig.cache

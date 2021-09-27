@@ -1,0 +1,28 @@
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.exe
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.deps.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.runtimeconfig.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.AssemblyInfo.cs
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint\Condiconales Dobles\Condicionales dobles\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.genruntimeconfig.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.exe
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.deps.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.runtimeconfig.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\bin\Debug\netcoreapp3.1\Condicionales dobles.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.AssemblyInfo.cs
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condiconales Dobles\Condicionales dobles - VS\Condicionales dobles\obj\Debug\netcoreapp3.1\Condicionales dobles.genruntimeconfig.cache

@@ -1,0 +1,14 @@
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\obj\Debug\netcoreapp3.1\Condicionales Anidadas.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\obj\Debug\netcoreapp3.1\Condicionales Anidadas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\obj\Debug\netcoreapp3.1\Condicionales Anidadas.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\obj\Debug\netcoreapp3.1\Condicionales Anidadas.AssemblyInfo.cs
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\obj\Debug\netcoreapp3.1\Condicionales Anidadas.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\bin\Debug\netcoreapp3.1\Condicionales Anidadas.exe
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\bin\Debug\netcoreapp3.1\Condicionales Anidadas.deps.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\bin\Debug\netcoreapp3.1\Condicionales Anidadas.runtimeconfig.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\bin\Debug\netcoreapp3.1\Condicionales Anidadas.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\bin\Debug\netcoreapp3.1\Condicionales Anidadas.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\bin\Debug\netcoreapp3.1\Condicionales Anidadas.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\obj\Debug\netcoreapp3.1\Condicionales Anidadas.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\obj\Debug\netcoreapp3.1\Condicionales Anidadas.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Anidadas\Condicionales Anidadas\Condicionales Anidadas\obj\Debug\netcoreapp3.1\Condicionales Anidadas.genruntimeconfig.cache
