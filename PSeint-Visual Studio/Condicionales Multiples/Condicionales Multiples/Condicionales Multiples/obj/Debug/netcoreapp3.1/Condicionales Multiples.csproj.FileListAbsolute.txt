@@ -1,0 +1,14 @@
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\obj\Debug\netcoreapp3.1\Condicionales Multiples.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\obj\Debug\netcoreapp3.1\Condicionales Multiples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\obj\Debug\netcoreapp3.1\Condicionales Multiples.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\obj\Debug\netcoreapp3.1\Condicionales Multiples.AssemblyInfo.cs
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\obj\Debug\netcoreapp3.1\Condicionales Multiples.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\bin\Debug\netcoreapp3.1\Condicionales Multiples.exe
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\bin\Debug\netcoreapp3.1\Condicionales Multiples.deps.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\bin\Debug\netcoreapp3.1\Condicionales Multiples.runtimeconfig.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\bin\Debug\netcoreapp3.1\Condicionales Multiples.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\bin\Debug\netcoreapp3.1\Condicionales Multiples.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\bin\Debug\netcoreapp3.1\Condicionales Multiples.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\obj\Debug\netcoreapp3.1\Condicionales Multiples.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\obj\Debug\netcoreapp3.1\Condicionales Multiples.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Condicionales Multiples\Condicionales Multiples\Condicionales Multiples\obj\Debug\netcoreapp3.1\Condicionales Multiples.genruntimeconfig.cache

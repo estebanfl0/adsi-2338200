@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /*Universal Selector*/
+        *{
+            border: 1px solid #63a067;
+            padding: 10px;
+        }
+        /*Type of label*/
+        ul{
+            list-style: none;
+        }
+        li{
+            font-size: 1.4rem;
+        }
+        /*Descending*/
+        main section ul li {
+            background-color: #ff8a8ab7;
+        }
+        header h1 a {
+            border: none;
+            padding: 0%;
+        }
+        /*Class*/
+        .upper {
+            text-transform: uppercase;
+        }
+        /* ID */
+        #important {
+            color: #900;
+        }
+        /**/
+        main section ul.games li#important {
+            background-color: #19802a;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1> <a href="./">🔴</a> Basic Selectors</h1>
+        </header>
+        <section>
+            <ul class="games">
+                <li class="upper">Hollow Knight</li>
+                <li id="important">Metroid Dread</li>
+                <li>Super Mario Oddysey</li>
+                <li>Legend of Zelda BOTW</li>
+                <li>Luigui's Mansion 3</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
