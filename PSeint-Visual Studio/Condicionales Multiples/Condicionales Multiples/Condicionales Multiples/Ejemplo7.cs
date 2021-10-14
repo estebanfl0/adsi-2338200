@@ -142,11 +142,7 @@ namespace Condicionales_Multiples
                 default:
                     Console.WriteLine("Syntax ERROR");
                     break;
-
             }
-
-            
-
             Console.WriteLine("Llamada a " + NameCase);
             Console.WriteLine("Numero llamadó [" + numero + "]");
             Console.WriteLine("Costo total de la llamada " + CostTot);
