@@ -31,23 +31,18 @@ namespace Condicionales_Anidadas
             if (CanComp < 5)
             {
                 Descuento = ((valorCT * 10) / 100);
-                TotPagD = CanComp * PreComput - Descuento;
-                Console.WriteLine("Su total a pagar es de " + TotPagD + " con el descuento incluido.");
             }
-            else if (CanComp >= 5 || CanComp < 10)
+            else if (CanComp < 10)
             {
                 Descuento = ((valorCT * 20) / 100);
-                TotPagD = CanComp * PreComput - Descuento;
-                Console.WriteLine("Su total a pagar es de " + TotPagD + " con el descuento incluido.");
             }
-            else if (CanComp > 10)
+            else 
             {
                 Descuento = ((valorCT * 40) / 100);
-                TotPagD = CanComp * PreComput - Descuento;
-                Console.WriteLine("Su total a pagar es de " + TotPagD + " con el descuento incluido.");
             }
 
-
+            TotPagD = CanComp * PreComput - Descuento;
+            Console.WriteLine("Su total a pagar es de " + TotPagD + " con el descuento incluido.");
         }
     }
 }

@@ -6,7 +6,7 @@ namespace Condicionales_Multiples
 {
     class Ejercicio07
     {
-        static void Main(string[] args)
+        static void MainTemporal(string[] args)
         {
             /*7. El costo de las llamadas internacionales depende de la zona geográfica en la que se encuentre el país destino,
             y del número de minutos hablados.
@@ -27,7 +27,8 @@ namespace Condicionales_Multiples
             double PreMin, Zona, CostTot, numero;
             int MinHab;
             string NameCase;
-
+            Console.WriteLine("Ejercicio 07");
+            Console.WriteLine("_______________");
             Console.WriteLine("Digite la extensión de la zona del mundo a la que quiere llamar");
             Console.WriteLine("12.  |América del Norte| ");
             Console.WriteLine("15.  |América Central| ");

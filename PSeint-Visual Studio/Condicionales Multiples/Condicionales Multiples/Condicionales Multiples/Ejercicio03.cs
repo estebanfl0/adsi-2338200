@@ -9,6 +9,7 @@ namespace Condicionales_Multiples
         static void MainTemporal(string[] args)
         {
             /*3. Dados como datos dos variables de tipo entero, obtenga el resultado de la siguiente función:
+             _____________________________________
             |Val          |       Num             |
             |-------------|-----------------------|
             |100 * v      |       1               |      
@@ -27,6 +28,18 @@ namespace Condicionales_Multiples
             Console.WriteLine("2. 100 ^ V");
             Console.WriteLine("3. 100 / V");
             Num1 = int.Parse(Console.ReadLine());
+
+            while (Num1 != 1 && Num1 != 2 && Num1 != 3)
+            {
+                Console.WriteLine("Syntax ERROR");
+                
+                Console.WriteLine("-------------");
+                Console.WriteLine("Digite la operacion que quiere realizar.");
+                Console.WriteLine("1. 100 * V");
+                Console.WriteLine("2. 100 ^ V");
+                Console.WriteLine("3. 100 / V");
+                Num1 = int.Parse(Console.ReadLine());
+            }
 
             
             Console.WriteLine("Asignelé un Valor a la variable (V)");

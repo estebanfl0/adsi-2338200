@@ -26,7 +26,7 @@ namespace Condicionales_Anidadas
             {
                 Console.WriteLine("El número mayor es " + num2);
             }
-            else if(num3 > num1 && num3 > num2)
+            else 
             {
                 Console.WriteLine("El número mayor es " + num3);
             }

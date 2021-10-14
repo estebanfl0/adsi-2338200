@@ -40,6 +40,7 @@ namespace Condicionales_Multiples
 
             while (mes != 1 && mes != 2 && mes != 3 && mes != 4 && mes != 5 && mes != 6 && mes != 7 && mes != 8 && mes != 9 && mes != 10 && mes != 11 && mes != 12)
             {
+                Console.WriteLine("[ERROR]");
                 Console.WriteLine("Mes");
                 Console.WriteLine("1. Enero");
                 Console.WriteLine("2. Febrero");

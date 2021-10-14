@@ -146,6 +146,8 @@ namespace Condicionales_Multiples
                     }
                     break;
 
+
+
                 default:
                     Console.WriteLine("Syntax ERROR");
                     break;
