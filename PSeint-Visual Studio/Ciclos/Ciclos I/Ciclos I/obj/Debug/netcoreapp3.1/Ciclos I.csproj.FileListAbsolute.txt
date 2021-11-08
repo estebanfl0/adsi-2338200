@@ -1,0 +1,14 @@
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\bin\Debug\netcoreapp3.1\Ciclos I.exe
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\bin\Debug\netcoreapp3.1\Ciclos I.deps.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\bin\Debug\netcoreapp3.1\Ciclos I.runtimeconfig.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\bin\Debug\netcoreapp3.1\Ciclos I.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\bin\Debug\netcoreapp3.1\Ciclos I.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\bin\Debug\netcoreapp3.1\Ciclos I.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\obj\Debug\netcoreapp3.1\Ciclos I.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\obj\Debug\netcoreapp3.1\Ciclos I.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\obj\Debug\netcoreapp3.1\Ciclos I.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\obj\Debug\netcoreapp3.1\Ciclos I.AssemblyInfo.cs
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\obj\Debug\netcoreapp3.1\Ciclos I.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\obj\Debug\netcoreapp3.1\Ciclos I.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\obj\Debug\netcoreapp3.1\Ciclos I.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\Ciclos I\Ciclos I\obj\Debug\netcoreapp3.1\Ciclos I.genruntimeconfig.cache

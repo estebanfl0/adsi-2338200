@@ -1,0 +1,14 @@
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\bin\Debug\netcoreapp3.1\While.exe
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\bin\Debug\netcoreapp3.1\While.deps.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\bin\Debug\netcoreapp3.1\While.runtimeconfig.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\bin\Debug\netcoreapp3.1\While.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\bin\Debug\netcoreapp3.1\While.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\bin\Debug\netcoreapp3.1\While.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\obj\Debug\netcoreapp3.1\While.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\obj\Debug\netcoreapp3.1\While.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\obj\Debug\netcoreapp3.1\While.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\obj\Debug\netcoreapp3.1\While.AssemblyInfo.cs
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\obj\Debug\netcoreapp3.1\While.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\obj\Debug\netcoreapp3.1\While.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\obj\Debug\netcoreapp3.1\While.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\While\While\obj\Debug\netcoreapp3.1\While.genruntimeconfig.cache
