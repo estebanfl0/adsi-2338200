@@ -14,14 +14,14 @@ namespace While
             suponiendo que los datos son extraídos alumno por alumno.
              */
 
-            double hombres = 0, mujeres = 0, alumnos, sexo;
+            double hombres = 0, mujeres = 0, alumnos, sexo, contador = 1;
             string nombre;
             Console.WriteLine("DIgite el numero total de alumnos");
             alumnos = double.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= alumnos; i++)
+            while (contador <= alumnos)
             {
-                Console.WriteLine("Nombre del alumno " + i);
+                Console.WriteLine("Nombre del alumno " + contador);
                 nombre = Console.ReadLine();
                 Console.WriteLine("Sexo del alumno ");
                 Console.WriteLine("1. Hombre");
@@ -45,6 +45,7 @@ namespace While
                 {
                     mujeres = mujeres + 1;
                 }
+                contador++;
             }
 
             Console.WriteLine("Hay " + hombres + " Hombres");

@@ -15,18 +15,18 @@ namespace While
             sueldo base y sus comisiones */
 
             string empleado;
-            double sueldo, ventas, comisionPorVen, totalpagar, NumEmpleados;
+            double sueldo, ventas, comisionPorVen, totalpagar, NumEmpleados, contador = 1;
 
             Console.WriteLine("Compañia de seguros FlowersCorp");
 
             Console.WriteLine("Digite el numero de empledos");
             NumEmpleados = double.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= NumEmpleados; i++)
+            while (contador <= NumEmpleados)
             {
-                Console.WriteLine("Nombre del empleado " + i);
+                Console.WriteLine("Nombre del empleado " + contador);
                 empleado = Console.ReadLine();
-                Console.WriteLine("Salario del empleado " + i);
+                Console.WriteLine("Salario del empleado " + contador);
                 sueldo = double.Parse(Console.ReadLine());
                 
                 while (sueldo < 0)
@@ -42,6 +42,7 @@ namespace While
                 Console.WriteLine("Vendió " + ventas + " en producots o srvicios");
                 Console.WriteLine("Tuvo unas comisiones de " + comisionPorVen);
                 Console.WriteLine("Para un total a pagar de " + totalpagar);
+                contador++;
             }
         }
     }

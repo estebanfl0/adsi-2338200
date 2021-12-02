@@ -6,7 +6,7 @@ namespace While
 {
     class Ejercicio04
     {
-        static void Main(string[] args)
+        static void MainTemporal(string[] args)
         {
             Console.WriteLine("Hello World!");
 
@@ -20,8 +20,8 @@ namespace While
             5 o 6  roja
             7 o 8  verde
             9 o 0  azul */
-            string  color;
-            double placa, automoviles;
+            
+            double placa, automoviles, contador = 1;
 
             Console.WriteLine("Digite el número de automoviles");
             automoviles = double.Parse(Console.ReadLine());
@@ -29,15 +29,15 @@ namespace While
             {
                 Console.WriteLine("Error, no se aceptan números negativos");
             }
-            for (int i = 1; i <= automoviles; i++)
+            while( contador <= automoviles )
             {
-                Console.WriteLine("Digite el último número de la placa del automovil " + i);
+                Console.WriteLine("Digite el último número de la placa del automovil " + contador);
                 placa = double.Parse(Console.ReadLine());
                 while (placa < 0 || placa > 9)
                 {
                     Console.WriteLine("\n");
                     Console.WriteLine("Error, numero de placa incorrecta, debe ser de un digito");
-                    Console.WriteLine("Digite el último número de la placa del automovil " + i);
+                    Console.WriteLine("Digite el último número de la placa del automovil " + contador);
                     placa = double.Parse(Console.ReadLine());
                     Console.WriteLine("\n");
                     
@@ -62,7 +62,7 @@ namespace While
                 {
                     Console.WriteLine("Placa Azul");
                 }
-
+                contador++;
             }
             
 

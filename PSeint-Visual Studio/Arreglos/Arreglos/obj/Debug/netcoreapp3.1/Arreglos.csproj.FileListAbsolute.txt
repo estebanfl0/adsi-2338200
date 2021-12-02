@@ -1,0 +1,14 @@
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\bin\Debug\netcoreapp3.1\Arreglos.exe
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\bin\Debug\netcoreapp3.1\Arreglos.deps.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\bin\Debug\netcoreapp3.1\Arreglos.runtimeconfig.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\bin\Debug\netcoreapp3.1\Arreglos.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\bin\Debug\netcoreapp3.1\Arreglos.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\bin\Debug\netcoreapp3.1\Arreglos.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\obj\Debug\netcoreapp3.1\Arreglos.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\obj\Debug\netcoreapp3.1\Arreglos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\obj\Debug\netcoreapp3.1\Arreglos.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\obj\Debug\netcoreapp3.1\Arreglos.AssemblyInfo.cs
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\obj\Debug\netcoreapp3.1\Arreglos.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\obj\Debug\netcoreapp3.1\Arreglos.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\obj\Debug\netcoreapp3.1\Arreglos.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arreglos\obj\Debug\netcoreapp3.1\Arreglos.genruntimeconfig.cache

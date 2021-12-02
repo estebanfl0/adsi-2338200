@@ -1,0 +1,14 @@
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.exe
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.deps.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.runtimeconfig.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.AssemblyInfo.cs
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Ciclos\DoWhile\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.genruntimeconfig.cache

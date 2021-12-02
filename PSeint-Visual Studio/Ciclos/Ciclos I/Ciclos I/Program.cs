@@ -13,7 +13,7 @@ namespace Ciclos_I
                 Console.WriteLine("i: " + i);
             }*/
 
-            for (int i=0; i<=10; i+=2)
+            /*for (int i=0; i<=10; i+=2)
             {
                 Console.WriteLine("i: " + i);
             }
@@ -75,7 +75,7 @@ namespace Ciclos_I
             /* Desarrollar un algoritmo que lea n números positivos, determine y muestre
              el promedio de los n números positivos*/
 
-            Console.WriteLine("Cuantos números desea ingresar");
+            /*Console.WriteLine("Cuantos números desea ingresar");
             _ = int.TryParse(Console.ReadLine(), out int n);
             int contador = 0, cantPositivos =0;
             double promedio;
@@ -92,7 +92,87 @@ namespace Ciclos_I
             }
             promedio = (double)suma / (double)cantPositivos;
             Console.WriteLine("El promedio es: " + Math.Round(promedio));
-  
+
+            double Notica;
+            do
+            {
+                Console.WriteLine("Ingrese el valor de la nota (Entre 0 y 5)");
+                _ = double.TryParse(Console.ReadLine(), out Notica);
+                if (Notica < 0 || Notica > 5)
+                {
+                    Console.WriteLine("Nota No valida, vúelva a ingresar la nota");
+                }
+            } while (Notica < 0 || Notica > 5);*/
+
+            string contraseña;
+            int numIntentos = 3;
+            do
+            {
+                Console.WriteLine("Digité su contraseña (intento número " + numIntentos + ")");
+                contraseña = Console.ReadLine();
+                if (contraseña == "Efg123000")
+                {
+                    Console.WriteLine("Contraseña Correcta");
+                }
+                else
+                {
+                    numIntentos--;
+                    if (numIntentos == 0)
+                    {
+                        Console.WriteLine("Cuenta bloqueada");
+                    }
+                }
+
+            } while (contraseña != "Efg123000" || numIntentos == 0);
+           
+
+            //int opcionOp;
+            //double resultado, num1, num2;
+           /*do
+            {
+                Console.WriteLine("Ingrese la operación que desea utilizar");
+                Console.WriteLine("1. Suma");
+                Console.WriteLine("2. Resta");
+                Console.WriteLine("3. Multiplicación");
+                Console.WriteLine("4. División");
+                Console.WriteLine("5. Salir");
+                opcionOp = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digité el primer número");
+                num1 = double.Parse(Console.ReadLine());
+                Console.WriteLine("Digité el segundo número");
+                num2 = double.Parse(Console.ReadLine());
+                switch (opcionOp)
+                {
+                    case 1:
+                        Console.WriteLine("Seleccionó Suma");
+                        resultado = num1 + num2;
+                        Console.WriteLine(num1 + " + " + num2 + " = " + resultado);
+                        break;
+                    case 2:
+                        Console.WriteLine("Seleccionó Resta");
+                        resultado = num1 - num2;
+                        Console.WriteLine(num1 + " - " + num2 + " = " + resultado);
+                        break;
+                    case 3:
+                        Console.WriteLine("Seleccionó Multiplicación");
+                        resultado = num1 * num2;
+                        Console.WriteLine(num1 + " x " + num2 + " = " + resultado);
+                        break;
+                    case 4:
+                        Console.WriteLine("Seleccionó División");
+                        resultado = num1 / num2;
+                        Console.WriteLine(num1 + " / " + num2 + " = " + resultado);
+                        break;
+                    case 5:
+                        Console.WriteLine("Seleccionó Salir");
+                        break;
+                    default:
+                        Console.WriteLine("La opción no es válida");
+                        break;
+                }
+            } while (opcionOp != 5);*/
+
+
 
         }
     }

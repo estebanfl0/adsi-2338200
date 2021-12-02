@@ -6,7 +6,7 @@ namespace For
 {
     class Ejercicio4
     {
-        static void Main(string[] args)
+        static void MainTemporal(string[] args)
         {
             Console.WriteLine("Hello World!");
             /*4. Suponga que se tiene un conjunto de calificaciones de un grupo de 40 alumnos. Realizar un algoritmo
