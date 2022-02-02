@@ -1,0 +1,14 @@
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\bin\Debug\netcoreapp3.1\Arrays Excersice.exe
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\bin\Debug\netcoreapp3.1\Arrays Excersice.deps.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\bin\Debug\netcoreapp3.1\Arrays Excersice.runtimeconfig.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\bin\Debug\netcoreapp3.1\Arrays Excersice.runtimeconfig.dev.json
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\bin\Debug\netcoreapp3.1\Arrays Excersice.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\bin\Debug\netcoreapp3.1\Arrays Excersice.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\obj\Debug\netcoreapp3.1\Arrays Excersice.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\obj\Debug\netcoreapp3.1\Arrays Excersice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\obj\Debug\netcoreapp3.1\Arrays Excersice.AssemblyInfoInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\obj\Debug\netcoreapp3.1\Arrays Excersice.AssemblyInfo.cs
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\obj\Debug\netcoreapp3.1\Arrays Excersice.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\obj\Debug\netcoreapp3.1\Arrays Excersice.dll
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\obj\Debug\netcoreapp3.1\Arrays Excersice.pdb
+C:\Users\Alex\Desktop\adsi-2338200\PSeint-Visual Studio\Arreglos\Arrays Excersice\Arrays Excersice\obj\Debug\netcoreapp3.1\Arrays Excersice.genruntimeconfig.cache

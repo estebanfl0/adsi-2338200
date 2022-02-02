@@ -4,7 +4,7 @@ namespace Arreglos
 {
     class EjemploClase
     {
-        static void Main(string[] args)
+        static void MainTemporal(string[] args)
         {
             Console.WriteLine("Arreglos/Arrays - Vectores");
 
