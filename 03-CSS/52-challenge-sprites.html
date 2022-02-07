@@ -10,7 +10,7 @@
             background-color: #17a053;
             border: 10px solid white ;
             margin: 0;
-            height: 100vh;
+            height: auto;
 
         }
         main{
@@ -72,7 +72,7 @@
             margin: 30px;
             margin-top: 30px;
             margin-left: 250px;
-            margin-right: 250px;
+            margin-right: 150px;
             text-align: center;
         }
         
@@ -116,28 +116,112 @@
             margin: 10px;
             text-align: center;
             border: 2px solid white;
-
-            
         }
+        
 
         /*C O N T E N I D O*/
         main section.content {
             background-color: #00000066;
-            margin-top: 30px;
-            margin-left: 250px;
-            margin-right: 250px;
+            margin: 40px auto;
+            padding: 20px;
+            width: 868px;
+            transition: all 0.2 ease-in;
         }
-        main section.content div {
-            background-color: white; 
-            border-radius: 3px; 
-            color: black;
+        main section.content article {
+            background-color: #fff;
+            margin: 10px;
+        }
+        main section.content article:last-child {
+            margin-bottom: 0;
+        }
+        main section.content article div {
+            display: inline-block;
+            vertical-align: top;
+        }
+        main section.content article div.text {
             margin-top: 20px;
-            margin-left: 230px;
-            margin-right: 230px;
-            padding: 70px;
-            font-size: 1rem;
-            text-align: center;
+            margin-bottom: 20px;
+            font-family: Verdana;
+            text-align: justify;
+            line-height: 1.5rem;
+            width: 408px;
         }
+        main section.content article div.image1 {
+            background: url(images/spriteweb.png);
+            background-position: -255px -500px;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 40px;
+            text-align: center;
+            width: 408px;
+            height: 115px;
+            width: 150px;
+            transition: all 0.8s ease-in;
+
+        }
+        main section.content article div.image2{
+            background: url(images/spriteweb.png);
+            background-position: -60px -210px;
+            margin: 10px;
+            text-align: center;
+            width: 408px;
+            height: 180px;
+            width: 150px;
+        }
+        
+        /*Animacion*/
+        
+        
+        main section.content article:hover {
+            transform: scale(1.02);
+            cursor: pointer;
+            color:  #17a053;
+        }
+        main section.content article:hover div.image1 {
+            transform: rotateY(360deg);
+            
+        }
+
+        /*Pie de pagina */
+
+      
+
+       main section.footer div.Menu-footer ul li{
+            background-color: #fff;
+            border-bottom: 4px solid white;
+            color: black;
+            display: inline-block;
+            margin-top: 4px;
+            padding: 10px 20px;
+            font-family: verdana;
+            text-transform: uppercase;
+            text-align: center;
+            transition: 0.3s all ease-in; /*Tiempo de animación*/
+            width: 120px;
+            margin: 0px auto;
+            
+       }
+
+       main section.footer div.image-footer {
+        background: url(images/spriteweb.png);
+        height: 180px;
+        width: 250px;
+        background-position: -510px -1020px;
+        margin: 0px auto;
+       }
+       main section.footer {
+           background-color: #fff;
+           width: 908px;
+           margin: 0px auto;
+       }
+       
+       main section.footer div.Menu-footer ul li:hover {
+           cursor: pointer;
+           border-bottom: #17a053 solid;
+           transition: all 0.2s;
+       }
+       
+
 
     </style>
 </head>
@@ -147,7 +231,7 @@
             <div class="logo"></div>
             <div class="menu">
                <ul>
-                <li>Inicio</li>
+                <li>Home</li>
                 <li>About</li>
                 <li>Portfolio</li>
                 <li>Services</li>
@@ -170,11 +254,39 @@
             </div>
             
         </section>
-        <section class="content">
-            <div>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, officiis, vel, laborum repudiandae iste repellat eius voluptate minima delectus earum at? Quam suscipit soluta dolor sed, quae odit? Minima recusandae aspernatur sequi numquam, illum sed debitis, magni laboriosam dolores cum inventore. Magnam quaerat reiciendis architecto at animi impedit perspiciatis laborum. Maiores delectus ut magnam fugiat aperiam! Odit assumenda a ipsa temporibus, beatae dignissimos neque incidunt debitis, natus harum tempora quis cumque animi atque illum possimus ipsam, totam nobis impedit deleniti ipsum perspiciatis omnis qui? Neque itaque esse quis distinctio perferendis cumque nemo eum, eos dolorum sit deserunt voluptates qui sunt.</h4>
+       <section class="content">
+            <article>
+                <div class="image1"></div>
+                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, eligendi iure magni adipisci delectus asperiores, deleniti error totam eos alias nemo neque quos facilis blanditiis dicta corrupti culpa voluptate porro voluptatem? Delectus eos blanditiis sapiente, iste beatae quo omnis magnam qui non asperiores aperiam sed quis similique quidem velit? Exercitationem.</div>
+                
+                <div class="image2"></div>
+            </article>
+            <article>
+                <div class="image1"></div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem facilis, nisi minima excepturi eligendi quae earum doloribus doloremque molestiae error iure fuga similique impedit quasi numquam aperiam recusandae. Vel deserunt harum quidem officia illo qui debitis culpa ipsam, nam non aliquam maiores temporibus molestias quo, magni necessitatibus porro, eligendi odio!</div>
+                
+                <div class="image2"></div>
+            </article>
+            <article>
+                <div class="image1"></div>
+                <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur inventore sed, unde nesciunt veritatis, sit nemo possimus dolorem fugit tenetur veniam eligendi, voluptas commodi reiciendis nam. Saepe temporibus esse libero quaerat eos cupiditate doloribus voluptas perspiciatis hic aliquid! A sit quaerat numquam iure reiciendis error eius ipsum suscipit illum molestiae.</div>
+                
+                <div class="image2"></div>
+            </article>
+       </section>
+       <section class="footer">
+            <div class="image-footer"></div>
+            <div class="Menu-footer">
+                <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Portfolio</li>
+                <li>Services</li>
+                <li>Contact</li>
+                </ul>
             </div>
-        </section>
+       </section>
+    
     </main>
     
 </body>
