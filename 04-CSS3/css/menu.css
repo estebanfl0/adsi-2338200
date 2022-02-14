@@ -32,7 +32,7 @@ main nav.menu li a:visited {
     position: relative;
     text-decoration: none;
     margin-bottom: 25px;
-    margin-left: 10px;
+    text-indent: 15px;
 }
 main nav.menu li a span {
     background-color:rgb(221, 148, 38);
@@ -53,7 +53,12 @@ main nav.menu li a span {
     transition: all 0.2 ease-in;
 }
 main nav.menu li a:hover span {
-    transform: translateX(3px);
-    background: linear-gradient( to right, rgb(221, 148, 38) 35%, #0d2724 65%);;
-    color: aliceblue;
+    transform: translateX(9px);
+    background: black;
+    color: rgb(221, 148, 38);
+    border: 2px rgb(221, 148, 38) solid;
 } 
+main nav.menu li a:hover {
+    color: rgb(221, 148, 38);
+    border: 2px rgb(221, 148, 38) solid;
+}
