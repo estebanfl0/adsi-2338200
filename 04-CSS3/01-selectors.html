@@ -6,6 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selectors</title>
     <link rel="stylesheet" href="css/master.css">
+    <style>
+        ul {
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            width: 310px;
+        }
+        ul li{
+           
+            background-color:  #fcdfac;
+            display: inline-block;
+            height: 50px;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            width: 50px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 3rem;
+        }
+        ul li:first-of-type {
+            background-color: black;
+            color: #fcdfac;
+            margin-left: 23px;
+        }
+        ul li:last-of-type {
+            background-color: black;
+            color: #fcdfac;
+        }
+        ul li:nth-child(3) {
+            background-color: black;
+            color: #fcdfac;
+            margin-bottom: 50px;
+        }
+        table {
+            /*border-collapse: collapse;*/
+            margin: 0 auto;
+        }
+        table td {
+            background-color: #fff;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        table tr:nth-child(2n+1) td:nth-child(2n) {
+            background-color: black;
+        }
+        table tr:nth-child(2n) td:nth-child(2n+1) {
+            background-color: black;
+        }
+        table tr:first-of-type td:first-of-type, table tr:nth-child(2) td:nth-child(2),table tr:nth-child(3) td:nth-child(3) {
+            background-color: aquamarine;
+        }
+        /*MENU*/
+        nav, article {
+            background-color: rgb(233, 230, 212);
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px;
+        }
+        nav {
+            width: 24%;
+        }
+        article {
+            width: 68%;
+        }
+        nav a:link, nav a:visited {
+            background-color: black;
+            border-radius: 4px;
+            color: #fff;
+            display: block;
+            margin: 4px 0;
+            opacity: 0.5;
+            padding: 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            opacity: 1;
+        }
+        article div {
+            display: none;
+            text-align: center;
+        }
+        article div#home:target,
+        article div#services:target,
+        article div#contact:target {
+            display: block;
+        }
+        article div img {
+            /*height: 100%;
+            width: 100%;*/
+        }
+        /*Selección*/
+        p.yellow::selection{
+            background-color: rgba(231, 216, 9, 0.479);
+        }
+        p.blue::selection{
+            background-color: rgba(0, 60, 255, 0.356);
+        }
+        p.red::selection{
+            background-color: rgba(248, 0, 0, 0.336);
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -13,7 +115,134 @@
             <h1><a href="index.html">🟠</a>Selectors</h1>
         </header>
         <section>
-            <h2>Subtitle</h2>
+            <h2>First-of-type / last-of-type / nth-child(n)</h2>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+            <h2></h2>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <h2>#home-target</h2>
+            <nav class="menu">
+                <a href="#home">HOME</a>
+                <a href="#services">SERVICES</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+            <article>
+                <div id="home">
+                    <h3>HOME</h3>
+                    <p>
+                        <img src="https://placekitten.com/300/300" alt="">
+                    </p>
+                </div>
+                <div id="services">
+                    <h3>Services</h3>
+                    <p>
+                        
+                        <img src="https://placekitten.com/350/400" alt="">
+                    </p>
+                </div>
+                <div id="contact">
+                    <H3>Contact</H3>
+                    <p>
+                        <img src="https://placekitten.com/350/440" alt="">
+                        
+                    </p>
+                </div>
+            </article>
+            <h2>::selection</h2>
+            <p class="yellow">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat. Sint nemo cum enim eaque pariatur iusto deserunt eligendi non laboriosam blanditiis molestias quam, nostrum distinctio! Doloremque, voluptates ipsam repellendus ratione nisi in architecto culpa error unde sint cumque quisquam qui, magnam, libero atque magni quibusdam autem incidunt et enim?
+            </p>
+            <p class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ipsam unde dignissimos aliquam. Ex natus autem laudantium atque dolor quas assumenda est, aliquid hic enim quidem corporis fugiat nostrum nam rem numquam obcaecati a. Aliquam blanditiis ipsa quas iste recusandae fugiat, harum laudantium voluptatibus, quod ipsam ipsum neque. Eveniet, amet.</p>
+            
+            <p class="red">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, et sunt iste exercitationem blanditiis distinctio? Laborum eos dolore aliquid placeat vitae? Ipsa cupiditate commodi quos omnis architecto dolore! Harum earum iste ullam pariatur adipisci fugit ipsum, quaerat totam. Sed explicabo delectus excepturi labore aliquid quibusdam sapiente, dolorum ad nemo eligendi.
+            </p>
         </section>
     </main>
 </body>

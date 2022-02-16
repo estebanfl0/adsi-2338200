@@ -30,3 +30,10 @@ main header h1 a:visited {
 main header h1 a:hover {
     transform: translateX(-6px);
 }
+main section h2 {
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+
+}
