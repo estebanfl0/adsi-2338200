@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background Multiples</title>
     <link rel="stylesheet" href="css/master.css">
+    <style>
+        div.box{
+            border: 2px solid black;
+            background: url(imgs/bg3.png),
+                        url(imgs/bg2.png),
+                        url(imgs/bg1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+            margin: 20px auto;
+            width: 80%;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -13,7 +26,8 @@
             <h1><a href="index.html">🟠</a>Background Multiples</h1>
         </header>
         <section>
-            <h2>Subtitle</h2>
+            <h2>Example:</h2>
+            <div class="box"></div>
         </section>
     </main>
 </body>

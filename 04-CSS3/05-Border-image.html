@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border Image</title>
     <link rel="stylesheet" href="css/master.css">
+    <style>
+        div.box {
+            border: 50px solid black;
+            border-image: url(imgs/border.png) 50 50 round;
+            height: 400px;
+            margin: 20px auto;
+            width: 80%;
+
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -13,7 +23,8 @@
             <h1><a href="index.html">🟠</a>Border Image</h1>
         </header>
         <section>
-            <h2>Subtitle</h2>
+            <h2>Example</h2>
+            <div class="box"></div>
         </section>
     </main>
 </body>
