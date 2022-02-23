@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        figure.zenitsu {
+            background: url(imgs/dc2.jpg) no-repeat center /contain;
+            
+            width: 80%;
+            height: 400px;
+            margin: 20px auto;
+        }
+        figure.trans1 {
+            transform: translate(-200px);
+        }
+        figure.trans2 {
+            transform: rotate(90deg);
+        }
+        figure.trans3 {
+            transform: scale(0.5);
+        }
+        figure.trans4 {
+            transform: skew(30deg);
+        }
+        figure.trans5 {
+            transform: translate(-250px) rotate(45deg) scale(0.6) ;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="index.html">🟠</a>Transformations</h1>
+        </header>
+        <section>
+            <h2>Translate(-200px)</h2>
+            <figure class="zenitsu trans1"></figure>
+
+            <h2>rotate(90deg)</h2>
+            <figure class="zenitsu trans2"></figure>
+
+            <h2>scale(0.5)</h2>
+            <figure class="zenitsu trans3"></figure>
+
+            <h2>skew(30deg)</h2>
+            <figure class="zenitsu trans4"></figure>
+
+            <h2>rotate(45deg) scale(0.6)</h2>
+            <figure class="zenitsu trans5"></figure>
+
+            <h2>Matrix</h2>
+            <figure class="zenitsu trans6"></figure>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        section.Class figure.garden {
+            background: url(imgs/garden.jpg) no-repeat center / cover;
+            margin: 1rem auto;
+            height: 400px;
+            position: relative;
+            width: 580px;
+            overflow: hidden;
+        }
+        section.Class figure.garden div.dove {
+            background:url(imgs/dove.png) no-repeat center / contain;
+            height: 80px;
+            position: absolute;
+            left: -100px;
+            width: 80px;
+            animation: AnimDove 10s  infinite;
+        }
+        @keyframes AnimDove {
+            0% {
+                left: -100px;
+                top: 0px;
+                transform: rotateY(0deg) scale(2);
+            }
+            50% {
+                left:280px;
+                top: 300px;
+                transform: rotateY(0deg) scale(0.8);
+            }
+            51% {
+                left:280px;
+                top: 300px;
+                transform: rotateY(180deg) scale(0.8);
+            }
+            70% {
+                left:280px;
+                top: 300px;
+                transform: rotateY(180deg) scale(0.8);
+            }
+            100% {
+                left:-100px;
+                top: 200px;
+                transform: rotateY(180deg) scale(4);
+            }
+        }
+
+        /*//////////////////////////////////////////////////////////*/
+
+        section.DragonBall figure.Escenario {
+            background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2bf03396-2d4e-476b-aa98-f5deaf64b1a3/db18bxf-3f3e0f98-af02-4c8a-8af6-b5eb5ad71c63.png/v1/fill/w_1024,h_576,q_80,strp/dragon_ball_super_escenario_v2_by_lucario_strike_db18bxf-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvMmJmMDMzOTYtMmQ0ZS00NzZiLWFhOTgtZjVkZWFmNjRiMWEzXC9kYjE4YnhmLTNmM2UwZjk4LWFmMDItNGM4YS04YWY2LWI1ZWI1YWQ3MWM2My5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.gxCn-vaXcGlpXOrHA-OKs-1IovE5RaH8Dae-RFKBvug) no-repeat center / cover;
+            margin: 1rem auto;
+            height: 700px;
+            position: relative;
+            width: 1000px;
+            overflow: hidden;
+        }
+
+        
+        section.DragonBall figure.Goku {
+            background:url(imgs/goku.gif);
+            height: 180px;
+            position: absolute;
+            width: 180px;
+            animation: Goku 2s  infinite;
+        }
+        section.DragonBall figure.Vegeta {
+            background:url(imgs/vegeta.gif);
+            height: 80px;
+            position: absolute;
+            width: 80px;
+            animation: vegeta 2s  infinite;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="index.html">🟠</a>Animations</h1>
+        </header>
+        <section class="Class">
+            <h2>Example: </h2>
+            <figure class="garden">
+                <div class="dove"></div>
+            </figure>
+        </section>
+        <section class="DragonBall">
+            <h2>Example: </h2>
+            <figure class="Escenario">
+                <div class="Goku"></div>
+                <div class="Vegeta"></div>
+            </figure>
+        </section>
+    </main>
+</body>
+</html>
