@@ -5,15 +5,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Responsive</title>
-    <link rel="stylesheet" href="css/master.css">
+    
+    <style>
+        html {
+            background-color: rgb(0, 0, 0);
+            margin: 20px auto;
+            color: aliceblue;
+        }
+        header div.logo {
+            background: url(imgs/imgs-responsive/opm-logo.png) no-repeat center;
+            width: 1600px;
+            height: 450px;
+            margin: 50px auto;
+        }
+        header div.menu {
+            margin: 50px auto;
+        }
+        header div.menu ul li{
+            display: inline-block;
+            position: relative;
+            margin-left: 65px;
+
+        }
+        header div.menu ul li.I1 {
+            background: url(imgs/imgs-responsive/opm1.jpg) no-repeat center;
+            width: 370px;
+            height: 340px;
+            
+        }
+        header div.menu ul li.I2 {
+            background: url(imgs/imgs-responsive/opm2.jpg) no-repeat center;
+            width: 370px;
+            height: 340px;
+            position: relative;
+
+        }
+        header div.menu ul li h4 {
+            background-color: rgba(109, 52, 52, 0.63);
+            margin-top: 240px;
+            text-align: center;
+            line-height: 6rem;
+            height: 150px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5rem;
+            /* Anim*/ transition: all 0.3s ease-in;
+            position: absolute;
+            width: 370px;
+            bottom: -100px;
+        }
+        /*ANIMACION*/
+        header div.menu ul li:hover h4{
+            background-color: rgba(109, 52, 52, 0.63);
+            top: -20px;
+            cursor: pointer;
+            scale: 1.2;
+        }
+
+
+        /*CONTENIDO*/
+        
+        section.contenido div.I1{
+            background: url(imgs/imgs-responsive/opm3.jpg);
+            background-position: right center;
+            display: inline-block;            
+            width: 370px;
+            height: 345px;
+            margin-left: 105px;
+            background-size: cover;
+            margin-bottom: 50px;
+        }
+        section.contenido div.I2{
+            background: url(imgs/imgs-responsive/opm3.jpg);
+            display: inline-block;            
+            width: 370px;
+            height: 325px;
+            margin-left: 105px;
+            background-size: cover;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+        section div.Text {
+            width: 800px;
+            background-position: right center;
+            vertical-align: top;
+            margin-left: 65px;
+            margin-right: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+           
+        }
+        section div.Text, section.contenido div.image{
+            display: inline-block;
+            vertical-align: top;
+        }
+        section.saitama {
+            border: 2px dotted red;
+            margin-bottom: 10px;
+        }
+        section.Genos {
+            border: 2px dotted red;
+            margin-bottom: 10px;
+        }
+
+    </style>
 </head>
 <body>
     <main>
         <header>
-            <h1><a href="index.html">🟠</a>Challenge Responsive</h1>
+            <div class="logo"></div>
+            <div class="menu">
+               <ul>
+                    <li class="I1">
+                        <h4>OPM (Season 1)</h4>
+                    </li>
+                    <li class="I2">
+                        <h4>OPM (Season 2)</h4>
+                    </li>
+                    <li class="I1">
+                        <h4>OPM (Season 3)</h4>
+                    </li>
+                    <li class="I2">
+                        <h4>OPM (Season 4)</h4>
+                    </li>
+               </ul>
+         </div>
         </header>
-        <section>
-            <h2>Subtitle</h2>
+        <section class="contenido saitama">
+            <div class="image I1"></div>
+            <div class="Text">
+                <h3>SAITAMA SENSEI</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aspernatur reiciendis, nam molestiae hic in est magni? Nisi animi amet voluptatibus autem dolores dolore quidem quis minus reiciendis atque ipsa suscipit, sapiente adipisci? Sequi doloremque quidem eaque illo sapiente, repudiandae necessitatibus iure. A non iste labore magnam qui doloremque provident, voluptatibus eligendi beatae molestias sequi reiciendis, natus corrupti quod harum repudiandae officiis quia veniam cupiditate recusandae voluptate tenetur aliquid perferendis. Incidunt cupiditate sequi sapiente cumque repellendus. Placeat id accusamus dignissimos tempore natus rerum culpa explicabo? Nam aperiam dolores commodi id nisi, iste, quis, vel numquam laboriosam repudiandae dolorem aliquid reprehenderit ipsa veritatis laborum? Est dignissimos repellendus quod hic ratione consequatur, totam, iure in similique officiis nihil optio esse ad corrupti fugit magni reprehenderit, deleniti iste neque mollitia omnis rerum et modi unde? Voluptate libero, quo optio odio sapiente necessitatibus soluta fugit adipisci quidem! Quis assumenda pariatur officiis quia asperiores ex!
+                </p>
+            </div>
+            
+        </section>
+        <section class="contenido Genos">
+            <div class="image I2"></div>
+            <div class="Text">
+                <h3>GENOS</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quidem totam, eveniet deleniti ut unde provident cupiditate aliquid ratione magnam, earum recusandae libero repellat ea, voluptatibus quam dolores enim. Alias quasi harum culpa dolor similique voluptatum possimus sequi blanditiis provident corporis atque ipsum sapiente consequuntur, laborum commodi aliquam nam hic repellendus iure illo accusamus est earum optio libero. Architecto officia doloremque placeat, magni vero ea id eum ex quaerat quae odit. Delectus reprehenderit itaque adipisci beatae odit, velit sint incidunt officiis voluptas doloribus nihil doloremque atque fugiat est! Quidem veniam, ullam in, quae ratione sapiente consectetur voluptatum tenetur eius fugiat harum quos voluptatibus tempora neque obcaecati aspernatur ut amet molestiae. Placeat aliquam quas deleniti cum odit, omnis aperiam ea consequuntur ut. Eos, quis? Nam, fugiat eligendi voluptatum, autem magnam quasi ea necessitatibus est aliquam reprehenderit, repellat laborum velit optio quaerat aspernatur itaque perspiciatis cumque. Aliquam distinctio fugit sunt quos quasi!
+                </p>
+            </div>
         </section>
     </main>
 </body>
