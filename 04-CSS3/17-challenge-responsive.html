@@ -16,16 +16,23 @@
 			font: 16px AgencyFB;
 		}
 		main {
-			margin: 0px auto;
+			margin: 32px auto;
 			width: 1280px;
 		}
 		header div.logo {
 			background: url(imgs/imgs-responsive/opm-logo.png) no-repeat center;
 			background-size: cover;
 			height: 270px;
+			transition: transform 0.5s ease-in;
 		}
+		header div.logo:hover {
+			transform: scale(1.1);
+			cursor: pointer;
+		}
+		
 		section.Menu {
 			margin-top: 40px;
+			margin-left: 30px ;
 		}
 		section.Menu div {
 			display: inline-block;
@@ -34,12 +41,7 @@
 			position: relative;
 			width: 280px;
 		}
-		section.Menu div:first-child {
-			margin-left: 28px;
-		}
-		section.Menu div:last-child {
-			margin-right: 0px;
-		}
+		
 		section.Menu div.I1 {
 			background: url(imgs/imgs-responsive/opm1.jpg) no-repeat center;
 			background-size: cover;
@@ -48,7 +50,7 @@
 			background: url(imgs/imgs-responsive/opm2.jpg) no-repeat center;
 			background-size: cover;
 		}
-		section.Menu div p {
+		section.Menu div h4 {
 			background-color: rgba(146, 5, 5, 0.308);
 			color: rgba(255,255,255, .8);
 			bottom: 0px;
@@ -66,7 +68,7 @@
 			cursor: pointer;
             border: 0.5px solid red;
 		}
-		section.Menu div:hover p {
+		section.Menu div:hover h4 {
 			height: 60px;
             background-color: rgba(146, 5, 5, 0.767);
 		}
@@ -85,6 +87,7 @@
 			height: 280px;
 			margin: 0px auto;
 			width: 280px;
+			border: 2PX dotted red;
 		}
 		section article.art1 figure {
 			background-position: right center;
@@ -105,7 +108,7 @@
 		}
 		section article div p {
 			color: aliceblue;
-			line-height: 1.4em;
+			
 		}
         /* R E S P O N S I V E */
 		@media (max-width: 1290px) {
@@ -116,7 +119,7 @@
 				background-size: 120%;
 			}
 			section.Menu div {
-				margin: 28px;
+				margin: 20px;
 			}
 			section article div {
 				width: 280px;
@@ -125,7 +128,7 @@
 				font-size: 1.4em;
 			}
 			section article div p {
-				overflow: scroll;
+				overflow: hidden;
 				height: 180px;
 			}
 		}
@@ -150,6 +153,7 @@
 				margin-left: 0px;
 				width: 280px;
 			}
+			
 		}
 		/*Final Stilo*/
 	</style>
@@ -161,16 +165,16 @@
 		</header>
 		<section class="Menu">
 			<div class="Temp I1">
-				<p>OPM (season 1)</p>
+				<h4>OPM (season 1)</h4>
 			</div>
 			<div class="Temp I2">
-				<p>OPM (season 2)</p>
+				<h4>OPM (season 2)</h4>
 			</div>
 			<div class="Temp I1">
-				<p>OPM (season 3)</p>
+				<h4>OPM (season 3)</h4>
 			</div>
 			<div class="Temp I2">
-				<p>OPM (season 4)</p>
+				<h4>OPM (season 4)</h4>
 			</div>
 		</section>
 		<section>
