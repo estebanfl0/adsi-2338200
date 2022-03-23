@@ -1,0 +1,59 @@
+body {
+    background: url(../images/javascript-compressor.png) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    font-weight: 400;
+    background-size: cover;
+
+}
+main {
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 40px;
+    height: 720px;
+    width: 1000px;
+    border: 4px solid black;
+    
+}
+h1 {
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 535px;
+    align-items: center;
+    gap: 1rem;
+}
+nav li {
+    list-style: none;
+}
+nav li a:link, nav li a:visited{
+    background-color: rgba(179, 245, 234, 0.829);
+    border-radius: 50px;
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    width: 460px;
+    font-size:larger;
+    text-align: center;
+}
+nav li a i {
+    background-color: #000;
+    border-radius: 50%;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    align-items: center;
+    height: 24px;
+    transition: background 0.2s 0.2s ease-in;
+    padding: 8px;
+    margin-right: 25px;
+}
+nav li a:hover {
+    background-color: rgb(182, 255, 11);
+} 
