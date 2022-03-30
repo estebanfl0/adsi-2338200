@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="css/menu.css">
     <style>
         ul li {
-            margin-left: 200px;
+            margin-left: 100px;
             color: aliceblue;
         }
-        
+        p {
+            padding-left: 120px;
+            color: aliceblue;
+        }
+        button  {
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -33,19 +39,47 @@
                 <li>Bart</li>
             </ul>
             <h3 id="nli"></h3>
+            <p class="paragraph">Lorem, ipsum dolor.</p>
+            <p class="paragraph">Lorem, ipsum dolor.</p>
+            <p class="paragraph">Lorem, ipsum dolor.</p>
+            <h3 id="np"></h3>
+
+            <!-- -->
+            <button class="btn first">Button 1</button>
+            <button class="btn">Button 2</button>
+            <button class="btn">Button 3</button>
+
         </section>
     </main>
     
     <script>
         //getElementById
-        let nli = document.getElementById('nli')
         let year = document.getElementById('year')
+        let nli = document.getElementById('nli')
+        let np = document.getElementById('np')
         let ndate = new Date
         year.innerText = 'Current Year \n' + ndate.getFullYear()
 
         //getElementByTagName
         let lis = document.getElementsByTagName('li')
         nli.innerText = 'There are: ' + lis.length + ' list elements \n' + 'Last element value is: ' + lis[lis.length-1].textContent
+
+        //getElementsByClassName
+         let nps = document.getElementsByClassName('paragraph')
+         nps[nps.length-1].style.color ='green'
+         np.innerText = 'There are: ' + nps.length + ' < class="guayacan"p> with class paragraph </class=p>'
+
+         //querySelector(s)
+         let btn = document.querySelector('button.first')
+         let btns = document.querySelectorAll('button.btn')
+
+         btn.style.marginLeft='120px'
+         btn.style.marginTop='30px'
+         btns[1].style.backgroundColor='Yellow'
+         
+
+
+
     </script>
     
 </body>
