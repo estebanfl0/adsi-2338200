@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/menu.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        main {
+
+            background: url(./images/ClearMode/MockUpFinal.svg) no-repeat center;
+            border: none;
+            position: relative;
+        }
+        header a:link, header a:visited{
+            background: url(./images/ClearMode/Btn-Home.svg) no-repeat;
+            color: #FFE485;
+            width: 63px;
+            height: 62px;
+            top: 22px;
+            left: 238px;
+        }
+        header a:hover {
+            color: black;
+        }
+        section {
+            position: relative;
+        }
+        section button.btnDarkMode {
+            background: url(./images/ClearMode/Btn-DarkMode.svg);
+            position: absolute;
+            width: 63px;
+            height: 62px;
+            left: 670px;
+            top: 22px;
+            cursor: pointer;
+            text-indent: -9999px;
+            transition: transform 0.4s ease;
+            border: none;
+
+        }
+        section button.btnDarkMode:hover{
+            transform: scale(1.2);
+        }
+        header a:hover{
+            transform: scale(1.2);
+        }
+        section ul.attributes {
+            position: absolute;
+            list-style: none;
+            top: 160px;
+            left: 120px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        section ul.attributes div.brand, section ul.attributes div.refer{
+            margin-left: 150px;
+            width: 92px;
+            margin-bottom: 80px;
+        }
+        section ul.attributes div.model, section ul.attributes div.color{
+            margin-top: 70px;
+            margin-left: 10px;
+            width: 92px;
+            margin-bottom: 80px;
+
+        }
+        nav.changevehicle{
+            position: absolute;
+            top: 360px;
+            left: 260px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 490px;
+        }
+        nav.changevehicle button.prev {
+            background: url(./images/ClearMode/Btn-ScreenLeft.svg) no-repeat;
+            width: 68px;
+            height: 65px;
+            text-indent: -9999px;
+            border: none;
+            margin-left: 5px;
+            transition: transform 0.4s ease;
+        }
+        nav.changevehicle button.next {
+            background: url(./images/ClearMode/Btn-ScreenRight.svg) no-repeat;
+            width: 80px;
+            height: 65px;
+            text-indent: -9999px;
+            border: none;
+            margin-right: 3px;
+            transition: transform 0.4s ease;
+        }
+        main section nav.changevehicle button.prev:hover{
+            transform: translate(-4.5px);
+        }
+        main section nav.changevehicle button.next:hover{
+            transform: translate(5px);
+        }
+        nav.controls {
+            
+            display: inline-block;
+            margin-top: 590px;
+            margin-left: 262px;
+        }
+        nav.controls button{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-indent: -9999px;
+            padding: 50px;
+            border: none;
+            transition: transform 0.4s ease;
+        }
+        nav.controls button.start{
+            background: url(./images/ClearMode/Group\ 24.svg) no-repeat;
+            height: 65px;
+            width: 65px;
+            margin-left: 5px;
+        }
+        nav.controls button.fordWard{
+            background: url(./images/ClearMode/Group\ 25.svg) no-repeat;
+            height: 65px;
+            width: 65px;
+        }
+        nav.controls button.stop{
+            background: url(./images/ClearMode/Group\ 26.svg) no-repeat;
+            height: 65px;
+            width: 65px;
+        }
+        nav.controls button.backWard{
+            background: url(./images/ClearMode/Group\ 27.svg) no-repeat;
+            height: 65px;
+            width: 65px;
+        }
+        nav.controls button.turnoff{
+            background: url(./images/ClearMode/Group\ 28.svg) no-repeat;
+            height: 65px;
+            width: 65px;
+        }
+        nav.controls button:hover{
+            transform: scale(1.2);
+        }
+
+        main.darkMode {
+            background: url(./images/DarkMode/NocturnoFinal.svg) no-repeat;
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <a href="index.html">
+                    
+                    
+            </a>
+            <h1></h1>
+        </header>
+        <section>
+            <button class="btnDarkMode">Dark Mode</button>
+            <ul class="attributes">
+                <div class="brand"></div>
+                <div class="refer"></div>
+                <div class="model"></div>
+                <div class="color"></div>
+            </ul>
+            <figure class="Landscape"></figure>
+            <nav class="changevehicle">
+
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </nav>
+            <nav class="controls">
+                <button class="start">Start</button>
+                <button class="fordWard">FordWord</button>
+                <button class="stop">Stop</button>
+                <button class="backWard">BackWord</button>
+                <button class="turnoff">Turnoff</button>
+            </nav>
+        </section>
+    </main>
+    <script>
+        const main = document.querySelector('main')
+        //Buttons
+        const btnDarkMode = document.querySelector('button.btnDarkMode')
+        //Attributes
+        const brand = document.querySelector('div.brand')
+        const refer = document.querySelector('div.refer')
+        const model = document.querySelector('div.model')
+        const color = document.querySelector('div.color')
+        //Object
+        const vehicle = {
+            attributes:[
+                { brand: 'toyota', refer: 'Yaris', model: 2020, color: 'Black', Image: ''},
+                { brand: 'Renult', refer: 'Clio', model: 2018, color: 'Red', Image: ''},
+                { brand: 'Ford', refer: 'Fiesta', model: 2016, color: 'Green', Image: ''},
+                { brand: 'Fiat', refer: '500', model: 2007, color: 'Blue', Image: ''}
+                
+            ],
+            //Methods
+            showattributes: function() {
+                alert()
+                brand.innerText = this.attributes[0].brand
+                refer.innerText = this.attributes[0].refer
+                model.innerText = this.attributes[0].model
+                color.innerText = this.attributes[0].color
+            },
+            darkMode: function() {
+                main.classList.toggle('darkmode')
+            },
+            start: function() {
+                alert('Start')
+            },
+            fordWard: function() {
+                alert('FordWard')
+            },
+            stop: function() {
+                alert('Stop')
+            },
+            backWar: function() {
+                alert('Show Attributes')
+            }
+        }
+        vehicle.showattributes()
+        btnDarkMode.onclick=()=>{
+            vehicle.darkMode()
+        }
+    </script>
+    
+</body>
+</html>
