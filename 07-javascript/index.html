@@ -4,37 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Menu JS</title>
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="shortcut.icon" href="">
+    <title>Main Menu ADSI</title>
+    <style>
+        body{
+            background: -webkit-linear-gradient( rgb(125, 255, 125), rgb(214, 184, 184));
+            display: 'poppins';
+            height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            margin: 40px auto;
+            gap: 10px;
+            width: 400px;
+        }
+        nav a:link, nav a:visited {
+            background-color: rgb(32, 57, 87);
+            color: aliceblue;
+            border-radius: 20px;
+            text-decoration: none;
+            text-align: left;
+            padding: 10px;
+            transition: background 0.2s ease-in;
+        }
+        nav a:hover{
+            background-color: rgb(29, 74, 129);
+        }
+    </style>
 </head>
 <body>
-    <main>
-        <header>
-            <h1>Main Menu JS</h1>
-        </header>
-        <nav id="menu">
-        
-        </nav>
-    </main>
-    <script>
-        const menu = document.getElementById('menu');
-        const links = [
-            {url: '01-write.html', text: 'write'},
-            {url: '02-comments.html', text: 'Comments'},
-            {url: '03-get-elements.html', text: 'Get Elements'},
-            {url: '04-variables.html', text: 'Variables'},
-            {url: '05-method-object.html', text: 'Method Object'},
-            {url: '06-types-objects.html', text: 'Types Objects'},
-            {url: '07-vehicle-objects.html', text: 'Veichle Object'},
-            {url: '08-functions.html', text: 'Functions'},
-            {url: '09-challenge-calculator.html', text: 'Challenge calculator'},
-            {url: '10-operators-arithmetic.html', text: 'Operators arithmetic'}
-        ]
-        links.forEach(CachamaRoja)
-        function CachamaRoja(item, index, arr){
-            menu.innerHTML+="<li><a href='"+item.url+"'><i>"+(index+1)+"</i>"+item.text+"</a></li>"
-        }
-    </script>
+    <h1>List of themes - ADSI 2338200</h1>
+    <nav>
+        <a href="01-emmet/">01 - Emmet</a>
+        <a href="02-HTML-401/">02 - HTML</a>
+        <a href="03-CSS/">03 - CSS 2.1</a>
+        <a href="04-CSS3/">04 - CSS 3</a>
+        <a href="05-pug/">05 - PUG</a>
+        <a href="06-sass/">06 - SASS</a>
+        <a href="07-javascript/">07 - JavaScript</a>
+    </nav>
 </body>
 </html>
