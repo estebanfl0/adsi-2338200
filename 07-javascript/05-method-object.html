@@ -61,16 +61,30 @@
         tname.innerText = pokemon.name + '          ('+pokemon.type+')'
         timage.setAttribute('src', pokemon.image)
         tmoves.innerHTML='<li> hp: '+pokemon.hp+'</li>'
+
         pokemon.attack()
+        tmoves.innerHTML +='<li> was attacked</li>'
+
         pokemon.attack()
+        tmoves.innerHTML +='<li> was attacked</li>'
+
         tmoves.innerHTML +='<li> hp: '+pokemon.hp+'</li>'
         pokemon.feed()
+        
         tmoves.innerHTML +='<li> hp: '+pokemon.hp+'</li>'
         pokemon.attack()
+        tmoves.innerHTML +='<li> was attacked</li>'
+
         pokemon.attack()
+        tmoves.innerHTML +='<li> was attacked</li>'
+
         pokemon.attack()
+        tmoves.innerHTML +='<li> was attacked</li>'
+
         pokemon.feed()
         pokemon.attack()
+        tmoves.innerHTML +='<li> was attacked</li>'
+
         tmoves.innerHTML +='<li> hp: '+pokemon.hp+'</li>'
         pokemon.attack()
         pokemon.attack()
