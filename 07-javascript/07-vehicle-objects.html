@@ -31,7 +31,9 @@
             color: black;
         }
         section {
-            position: relative;
+            position: absolute;
+            width: 1000px;
+            border: 2px solid red;
         }
         section button.btnDarkMode {
             background: url(./images/ClearMode/Btn-DarkMode.svg);
@@ -44,6 +46,8 @@
             text-indent: -9999px;
             transition: transform 0.4s ease;
             border: none;
+            position: absolute;
+
 
         }
         section button.btnDarkMode:hover{
@@ -62,16 +66,27 @@
             flex-wrap: wrap;
         }
         section ul.attributes div.brand, section ul.attributes div.refer{
-            margin-left: 150px;
+            margin-left: 170px;
+            margin-right: -15px;
             width: 92px;
             margin-bottom: 80px;
-        }
-        section ul.attributes div.model, section ul.attributes div.color{
-            margin-top: 70px;
-            margin-left: 10px;
-            width: 92px;
-            margin-bottom: 80px;
+            position: relative;
 
+        }
+        section ul.attributes div.model {
+            margin-top: 70px;
+            margin-left: 172px;
+            width: 92px;
+            margin-bottom: 80px;
+            position: absolute;
+
+        }
+        section ul.attributes div.color{
+            margin-top: 70px;
+            margin-left: 415px;
+            width: 92px;
+            margin-bottom: 80px;
+            position: absolute;
         }
         nav.changevehicle{
             position: absolute;
@@ -152,10 +167,29 @@
             transform: scale(1.2);
         }
 
-        main.darkMode {
+        main.darkmode {
             background: url(./images/DarkMode/NocturnoFinal.svg) no-repeat;
             border: 2px solid red;
         }
+        main div figure.Landscape div.Clouds{
+            background: url(./images/ClearMode/Clouds.png);
+            width: 211px;
+            height: 131px;
+            margin-left: 261px;
+            margin-top: 265px;
+            transform: scale(0.5);
+            border: 2px solid red;
+
+        }
+        div figure.Landscape{
+            background: url(./images/ClearMode/Sky\ Pink.jpg);
+            width: 470px;
+            height: 276px;
+            margin-left: 261px;
+            margin-top: 265px;
+        }
+        
+        
 
     </style>
 </head>
@@ -176,7 +210,11 @@
                 <div class="model"></div>
                 <div class="color"></div>
             </ul>
-            <figure class="Landscape"></figure>
+            <div>
+                <figure class="Landscape">
+                    <div class="Clouds"></div>
+                </figure>
+            </div>
             <nav class="changevehicle">
 
                 <button class="prev">Prev</button>
@@ -203,7 +241,7 @@
         //Object
         const vehicle = {
             attributes:[
-                { brand: 'toyota', refer: 'Yaris', model: 2020, color: 'Black', Image: ''},
+                { brand: 'Toyota', refer: 'Yaris', model: 2020, color: 'Black', Image: ''},
                 { brand: 'Renult', refer: 'Clio', model: 2018, color: 'Red', Image: ''},
                 { brand: 'Ford', refer: 'Fiesta', model: 2016, color: 'Green', Image: ''},
                 { brand: 'Fiat', refer: '500', model: 2007, color: 'Blue', Image: ''}
@@ -211,7 +249,6 @@
             ],
             //Methods
             showattributes: function() {
-                alert()
                 brand.innerText = this.attributes[0].brand
                 refer.innerText = this.attributes[0].refer
                 model.innerText = this.attributes[0].model
