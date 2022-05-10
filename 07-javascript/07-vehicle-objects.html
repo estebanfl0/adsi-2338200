@@ -437,13 +437,24 @@
     </main>
     <script>
         const main = document.querySelector('main')
+        const lands = document.querySelector('figure.Landscape')
         //Buttons
         const btnDarkMode = document.querySelector('button.btnDarkMode')
+        const btnprev = document.querySelector('button.prev')
+        const btnnext = document.querySelector('button.next')
+        const btnstart = document.querySelector('button.start')
+        const btnfordWard = document.querySelector('button.fordWard')
+        const btnstop = document.querySelector('button.stop')
+        const btnturnoff = document.querySelector('button.turnoff')
+        const btnBack = document.querySelector('button.backWard')
+
+
         //Attributes
         const brand = document.querySelector('div.brand')
         const refer = document.querySelector('div.refer')
         const model = document.querySelector('div.model')
         const color = document.querySelector('div.color')
+        const image = document.querySelector('div.carro')
         //Object
         const vehicle = {
             attributes:[
@@ -459,21 +470,44 @@
                 refer.innerText = this.attributes[0].refer
                 model.innerText = this.attributes[0].model
                 color.innerText = this.attributes[0].color
+                image.setAttribute('src', this.attributes[index].image)
             },
             darkMode: function() {
                 main.classList.toggle('darkmode')
             },
             start: function() {
-                alert('Start')
+                if (!engine) {
+                    image.classList.add('start');
+                    engine=true;
+                }
+            },
+            off: function() {
+                if(engine && !move) {
+                    image.classList.remove('start');
+                    engine=false;
+                }  
             },
             fordWard: function() {
-                alert('FordWard')
+                if(engine && !move){
+                    lands.classList.remove('stop');
+                    lands.classList.remove('reverse');
+                    lands.classList.add('move');
+                    move=true;
+                }
             },
             stop: function() {
-                alert('Stop')
+                if(engine && move){
+                    lands.classList.add('stop');
+                    move=false;
+                }
             },
             backWar: function() {
-                alert('Show Attributes')
+                if(engine && !move){
+                    lands.classList.remove('stop');
+                    lands.classList.add('reverse');
+                    lands.classList.add('move');
+                    move=true;
+                }
             }
         }
         vehicle.showattributes()
@@ -485,17 +519,32 @@
         btnDarkMode.onclick = () => {
             vehicle.darkMode()
         }
-        btnNext.onclick = () => {
+        btnnext.onclick = () => {
             if (cindex < vehicle.attributes.length-1) {
                 cindex++
                 vehicle.showAttributes(cindex)
             }
         }
-        btnPrev.onclick = () => {
+        btnprev.onclick = () => {
             if (cindex > 0) {
                 cindex--
                 vehicle.showAttributes(cindex)
             }
+        }
+        btnstart.onclick=()=>{
+            vehicle.start();
+        }
+        btnturnoff.onclick=()=>{
+            vehicle.off();
+        }
+        btnstop.onclick=()=>{
+            vehicle.stop();
+        }
+        btnBack.onclick=()=>{
+            vehicle.backWard();
+        }
+        btnfordWard.onclick=()=>{
+            vehicle.forWard();
         }
     </script>
 </section>

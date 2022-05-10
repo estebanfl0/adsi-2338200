@@ -17,7 +17,7 @@
             border: 2px solid rgb(107, 107, 107);
         }
         
-        header.displaay{
+        header.display{
             background: url(images/Calculator/Screen.svg) no-repeat center;
             height: 118px;
             width: 302px;
@@ -26,7 +26,7 @@
             overflow: hidden ;
             
         }
-        header.displaay button.back{
+        header.display button.back{
             height: 20px;
             width: 20px;
             background: url(images/Calculator/Back.svg) no-repeat center;
@@ -36,11 +36,11 @@
             margin-left: 265px;
             margin-top: 80px;
         }
-        header.displaay button.back:hover{
+        header.display button.back:hover{
             transform: translate(-3px);
         }
 
-        header.displaay input.value{
+        header.display input.value{
             background: none;
             border: none;
             color: #D4830A;
@@ -50,7 +50,7 @@
             text-align: right;
             right: 20px;
             top: 20px;
-            letter-spacing: 2px;
+            
             outline: none;
 
         }
@@ -148,7 +148,7 @@
         </header>
         <section>
             <div class="calculator">
-                <header class="displaay">
+                <header class="display">
                     <button class="back"></button>
                     <input type="text" class="value" readonly>
                 </header>
@@ -206,11 +206,9 @@
 
 
         //action
-        one.onclik = () => {
-            disValue.value += '1'
-
-            alert ();
+        one.onclick= () => {
             if(validateLength()) {
+                disValue.value += '1'
             }
         }
         function validateLength() {
