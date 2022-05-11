@@ -155,67 +155,221 @@
                 
                 <section class="buttons">
                     <button class="btn-clear"></button>
-                    <button class="btn-brackets"></button>
-                    <button class="btn-porcentage"></button>
-                    <button class="btn-divition"></button>
-                    <button class="btn-seven"></button>
-                    <button class="btn-eight"></button>
-                    <button class="btn-nine"></button>
-                    <button class="btn-prod"></button>
-                    <button class="btn-four"></button>
-                    <button class="btn-five"></button>
-                    <button class="btn-six"></button>
-                    <button class="btn-rest"></button>
-                    <button class="btn-one"></button>
-                    <button class="btn-two"></button>
-                    <button class="btn-three"></button>
-                    <button class="btn-sum"></button>
-                    <button class="btn-pow"></button>
-                    <button class="btn-zero"></button>
-                    <button class="btn-Point"></button>
+                    <button class="btn-brackets"        data-brac="(" data-ket=")"></button>
+                    <button class="btn-porcentage"      data-opr="%"></button>
+                    <button class="btn-divition"        data-opr="/"></button>
+                    <button class="btn-seven"           data-num="7"></button>
+                    <button class="btn-eight"           data-num="8"></button>
+                    <button class="btn-nine"            data-num="9"></button>
+                    <button class="btn-prod"            data-opr="*"></button>
+                    <button class="btn-four"            data-num="4"></button>
+                    <button class="btn-five"            data-num="5"></button>
+                    <button class="btn-six"             data-num="6"></button>
+                    <button class="btn-rest"            data-opr="-"></button>
+                    <button class="btn-one"             data-num="1"></button>
+                    <button class="btn-two"             data-num="2"></button>
+                    <button class="btn-three"           data-num="3"></button>
+                    <button class="btn-sum"             data-opr="+"></button>
+                    <button class="btn-pow"             data-opr="^"></button>
+                    <button class="btn-zero"            data-num="0"></button>
+                    <button class="btn-Point"           data-opr="."></button>
                     <button class="btn-equal"></button>
                 </section>
             </div>
         </section>
     </main>
     <script>
-        const disValue = document.querySelector('input.value')
+        const display = document.querySelector('input.value')
 
+        const bracket = document.querySelector('button.brac' + 'button.ket')
 
         const back = document.querySelector('button.back')
         const clear = document.querySelector('button.btn-clear')
-        const brackets = document.querySelector('button.btn-brackets')
-        const porcentage = document.querySelector('button.btn-porcentage')
-        const divition = document.querySelector('button.btn-divition')
-        const seven = document.querySelector('button.btn-seven')
-        const eight = document.querySelector('button.btn-eight')
-        const nine = document.querySelector('button.btn-nine')
-        const prod = document.querySelector('button.btn-prod')
-        const four = document.querySelector('button.btn-four')
-        const five = document.querySelector('button.btn-five')
-        const six = document.querySelector('button.btn-six')
-        const rest = document.querySelector('button.btn-rest')
-        const one = document.querySelector('button.btn-one')
-        const two = document.querySelector('button.btn-two')
-        const three = document.querySelector('button.btn-three')
-        const sum = document.querySelector('button.btn-sum')
-        const pow = document.querySelector('button.btn-pow')
-        const zero = document.querySelector('button.btn-zero')
-        const Point = document.querySelector('button.btn-Point')
         const equal = document.querySelector('button.btn-equal')
+
+        const btnsNumbers=document.querySelectorAll('button[data-num]')
+        const btnsOperators=document.querySelectorAll('button[data-opr]')
+        
+        var operStatus = false
+
+        //Events
+        // document.onkeypress = (evt) => {
+        //     switch (evt.keyCode) {                
+        //         case 8:
+        //             deleteLastValue()
+        //             break;
+        //         default:
+        //             break;
+        //     }
+        // }
+
+        document.onkeyup = (evt) => {
+            //alert(evt.keyCode)
+            switch (evt.keyCode) {
+                //Back
+                case 8:
+                if (operStatus) {
+                        deleteLastValue()
+                        operStatus = false
+
+                    }
+                    break;
+                //Supr
+                case 46:
+                if (operStatus) {
+                        ClearStreem()
+                        operStatus = false
+
+                    }
+                    break;
+                //suma
+                case 107:
+                if (operStatus) {
+                        display.value += '+'
+                        operStatus = false
+                    }
+                    break;
+                //resta
+                case 109:
+                if (operStatus) {
+                        display.value += '-'
+                        operStatus = false
+                    }
+                    break;
+                //Multiplicación
+                case 106:
+                if (operStatus) {
+                        display.value += '*'
+                        operStatus = false
+                    }
+                    break;
+                //Division
+                case 111:
+                if (operStatus) {
+                        display.value += '/'
+                        operStatus = false
+                    }
+                    break;
+                //Punto
+                case 190:
+                if (operStatus) {
+                        display.value += '.'
+                        operStatus = false
+                    }
+                    break;
+                //Números
+                case 96:
+                case 48:
+                    display.value += 0
+                    operStatus = true
+                    break;
+                case 97:
+                case 49:
+                    display.value += 1
+                    operStatus = true
+                    break;
+                case 98:
+                case 50:
+                    display.value += 2
+                    operStatus = true
+                    break;
+                case 99:
+                case 51:
+                    display.value += 3
+                    operStatus = true
+                    break;
+                case 100:
+                case 52:
+                    display.value += 4
+                    operStatus = true
+                    break;
+                case 101:
+                    display.value += 5
+                    operStatus = true
+                    break;
+                case 53:
+                    if (evt.shifKey && operStatus) {
+                            display.value += '%'
+                            operStatus = false
+                    } else {
+                        display.value += 5
+                        operStatus = true
+                    }
+                    break;
+                case 102:
+                case 54:
+                    display.value += 6
+                    operStatus = true
+                    break;
+                case 103:
+                case 55:
+                    display.value += 7
+                    operStatus = true
+                    break;
+                case 104:
+                case 56:
+                    display.value += 8
+                    operStatus = true
+                    break;
+                case 105:
+                case 57:
+                    display.value += 9
+                    operStatus = true
+                    break;
+                default:
+                    break;
+            }
+        }
+
 
 
         //action
-        one.onclick= () => {
-            if(validateLength()) {
-                disValue.value += '1'
+        clear.onclick= () => {
+            ClearStreem()
+
+        }
+        function ClearStreem() {
+            display.value = ''
+            operStatus = false
+        }
+        
+        back.onclick = () => {
+            deleteLastValue()
+        }
+        for (let i = 0; i < btnsNumbers.length; i++) {
+            btnsNumbers[i].onclick = function() {
+                operStatus = true
+                addToDisplay( btnsNumbers[i].getAttribute('data-num'))
+            }
+        }
+
+        for (let i = 0; i < btnsOperators.length; i++) {
+            btnsOperators[i].onclick = function() {
+                if (operStatus) {
+                    addToDisplay(this.getAttribute('data-opr'))
+                    operStatus = false
+                }
             }
         }
         function validateLength() {
-            if(disValue.value.length < 5 ){
+            if(display.value.length < 18 ){
                 return true
             } else {
                 return false
+            }
+        }
+        function deleteLastValue() {
+            display.value = display.value.slice(0, -1)
+            if (isNaN(display.value.slice(-1))) {
+                operStatus = false
+            } else {
+                operStatus = true
+            }
+        }
+        function addToDisplay(c) {
+            
+            if (validateLength) {
+                display.value+=c
             }
         }
 

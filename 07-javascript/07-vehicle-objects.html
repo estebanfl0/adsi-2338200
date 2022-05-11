@@ -129,6 +129,8 @@
             display: inline-block;
             margin-top: 590px;
             margin-left: 262px;
+            border: 2px solid orange;
+
         }
         nav.controls button{
             margin-top: 20px;
@@ -137,6 +139,8 @@
             padding: 50px;
             border: none;
             transition: transform 0.4s ease;
+            border: 2px solid blue;
+
         }
         nav.controls button.start{
             background: url(./images/ClearMode/Group\ 24.svg) no-repeat;
@@ -145,6 +149,7 @@
             margin-left: 5px;
             transition: transform 0.4s ease;
             z-index: inherit;
+            border: 2px solid black;
 
         }
         nav.controls button.fordWard{
@@ -436,6 +441,7 @@
         </section>
     </main>
     <script>
+        var cindex= 0
         const main = document.querySelector('main')
         const lands = document.querySelector('figure.Landscape')
         //Buttons
@@ -465,12 +471,12 @@
                 
             ],
             //Methods
-            showattributes: function() {
-                brand.innerText = this.attributes[0].brand
-                refer.innerText = this.attributes[0].refer
-                model.innerText = this.attributes[0].model
-                color.innerText = this.attributes[0].color
-                image.setAttribute('src', this.attributes[index].image)
+            ShowAttributes: function(index) {
+                brand.innerText = this.attributes[index].brand
+                refer.innerText = this.attributes[index].refer
+                model.innerText = this.attributes[index].model
+                color.innerText = this.attributes[index].color
+                image.setAttribute('src',this.attributes[index].image)
             },
             darkMode: function() {
                 main.classList.toggle('darkmode')
@@ -510,17 +516,15 @@
                 }
             }
         }
-        vehicle.showattributes()
+        vehicle.ShowAttributes(0)
+
         btnDarkMode.onclick=()=>{
             vehicle.darkMode()
         }
-        vehicle.showAttributes(0)
-        // Actions
-        btnDarkMode.onclick = () => {
-            vehicle.darkMode()
-        }
+        
+       
         btnnext.onclick = () => {
-            if (cindex < vehicle.attributes.length-1) {
+            if (cindex < (vehicle.attributes.length-1)) {
                 cindex++
                 vehicle.showAttributes(cindex)
             }
