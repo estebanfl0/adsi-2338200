@@ -129,8 +129,6 @@
             display: inline-block;
             margin-top: 590px;
             margin-left: 262px;
-            border: 2px solid orange;
-
         }
         nav.controls button{
             margin-top: 20px;
@@ -139,20 +137,16 @@
             padding: 50px;
             border: none;
             transition: transform 0.4s ease;
-            border: 2px solid blue;
-
         }
-        nav.controls button.start{
+        nav.controls button.btnStart{
             background: url(./images/ClearMode/Group\ 24.svg) no-repeat;
             height: 65px;
             width: 65px;
             margin-left: 5px;
             transition: transform 0.4s ease;
             z-index: inherit;
-            border: 2px solid black;
-
         }
-        nav.controls button.fordWard{
+        nav.controls button.btnForward{
             background: url(./images/ClearMode/Group\ 25.svg) no-repeat;
             height: 65px;
             width: 65px;
@@ -160,7 +154,7 @@
             z-index: inherit;
 
         }
-        nav.controls button.stop{
+        nav.controls button.btnStop{
             background: url(./images/ClearMode/Group\ 26.svg) no-repeat;
             height: 65px;
             width: 65px;
@@ -168,7 +162,7 @@
             z-index: inherit;
 
         }
-        nav.controls button.backWard{
+        nav.controls button.btnBackward{
             background: url(./images/ClearMode/Group\ 27.svg) no-repeat;
             height: 65px;
             width: 65px;
@@ -176,20 +170,20 @@
             z-index: inherit;
 
         }
-        nav.controls button.turnoff{
+        nav.controls button.btnTurnOff{
             background: url(./images/ClearMode/Group\ 28.svg) no-repeat;
             height: 65px;
             width: 65px;
             transition: transform 0.4s ease;
             z-index: inherit;
         }
-        nav.controls button.start:hover, nav.controls button.fordWard:hover, nav.controls button.stop:hover, nav.controls button.backWard:hover, nav.controls button.turnoff:hover{
-            transform: scale(1.2);
-        }
-
+        nav.controls button.btnStart:hover{ transform: scale(1.2);}
+        nav.controls button.btnForward:hover{ transform: scale(1.2);}
+        nav.controls button.btnStop:hover{ transform: scale(1.2);}
+        nav.controls button.btnBackward:hover{ transform: scale(1.2);}
+        nav.controls button.btnTurnOff:hover{transform: scale(1.2);}
         main.darkmode {
             background: url(./images/DarkMode/NocturnoFinal.svg) no-repeat center;
-            border: 2px solid red;
             border: none;
             position: relative;
             color: aliceblue;
@@ -233,38 +227,38 @@
             margin-right: 3px;
             transition: transform 0.4s ease;
         }
-        main.darkmode nav.controls button.start{
+        main.darkmode nav.controls button.btnStart{
             background: url(./images/DarkMode/Group\ 11.svg) no-repeat;
             height: 65px;
             width: 65px;
             margin-left: 5px;
             transition: transform 0.4s ease;
         }
-        main.darkmode nav.controls button.fordWard{
+        main.darkmode nav.controls button.btnForward{
             background: url(./images/DarkMode/Group\ 12.svg) no-repeat;
             height: 65px;
             width: 65px;
             transition: transform 0.4s ease;
         }
-        main.darkmode nav.controls button.stop{
+        main.darkmode nav.controls button.btnStop{
             background: url(./images/DarkMode/Group\ 13.svg) no-repeat;
             height: 65px;
             width: 65px;
             transition: transform 0.4s ease;
         }
-        main.darkmode nav.controls button.backWard{
+        main.darkmode nav.controls button.btnBackward{
             background: url(./images/DarkMode/Group\ 14.svg) no-repeat;
             height: 65px;
             width: 65px;
             transition: transform 0.4s ease;
         }
-        main.darkmode nav.controls button.turnoff{
+        main.darkmode nav.controls button.btnTurnOff{
             background: url(./images/DarkMode/Group\ 15.svg) no-repeat;
             height: 65px;
             width: 65px;
             transition: transform 0.4s ease;
         }
-        main.darkmode div figure.Landscape{
+        main.darkmode div figure.landscape{
             background: url(./images/DarkMode/Fondo/1.svg);
             width: 470px;
             height: 276px;
@@ -273,7 +267,7 @@
             position: absolute;
         }
         
-        main.darkmode div figure.Landscape div.SolNubes{
+        main.darkmode div figure.landscape div.SolNubes{
             background: url(./images/DarkMode/Fondo/2.svg);
             width: 470px;
             height: 276px;
@@ -282,7 +276,7 @@
             position: absolute;
             animation: animParallax 60s linear infinite;
         }
-        main.darkmode div figure.Landscape div.Edicios3{
+        main.darkmode div figure.landscape div.Edicios3{
             background: url(./images/DarkMode/Fondo/3.svg);
             width: 470px;
             height: 276px;
@@ -291,7 +285,7 @@
             position: absolute;
             animation: animParallax 50s linear infinite;
         }
-        main.darkmode div figure.Landscape div.Edicios4{
+        main.darkmode div figure.landscape div.Edicios4{
             background: url(./images/DarkMode/Fondo/4.svg);
             width: 470px;
             height: 276px;
@@ -300,7 +294,7 @@
             position: absolute;
             animation: animParallax 30s linear infinite;
         }
-        main.darkmode div figure.Landscape div.Edicios5{
+        main.darkmode div figure.landscape div.Edicios5{
             background: url(./images/DarkMode/Fondo/5.svg);
             width: 470px;
             height: 276px;
@@ -309,7 +303,7 @@
             position: absolute;
             animation: animParallax 20s linear infinite;
         }
-        main.darkmode div figure.Landscape div.Carretera{
+        main.darkmode div figure.landscape div.Carretera{
             background: url(./images/DarkMode/Fondo/6.svg);
             width: 470px;
             height: 276px;
@@ -320,7 +314,7 @@
         }
         
        
-        div figure.Landscape{
+        div figure.landscape{
             background: url(./images/ClearMode/Fondo/Sky\ Pink\ 1.svg);
             width: 470px;
             height: 276px;
@@ -329,7 +323,7 @@
             position: absolute;
         }
         
-        div figure.Landscape div.SolNubes{
+        div figure.landscape div.SolNubes{
             background: url(./images/ClearMode/Fondo/Sol\ y\ nubes\ 2.svg);
             width: 470px;
             height: 276px;
@@ -338,7 +332,7 @@
             position: absolute;
             animation: animParallax 60s linear infinite;
         }
-        div figure.Landscape div.Edicios3{
+        div figure.landscape div.Edicios3{
             background: url(./images/ClearMode/Fondo/Edificios\ 3.svg);
             width: 470px;
             height: 276px;
@@ -347,7 +341,7 @@
             position: absolute;
             animation: animParallax 50s linear infinite;
         }
-        div figure.Landscape div.Edicios4{
+        div figure.landscape div.Edicios4{
             background: url(./images/ClearMode/Fondo/Edificios\ 4.svg);
             width: 470px;
             height: 276px;
@@ -356,7 +350,7 @@
             position: absolute;
             animation: animParallax 30s linear infinite;
         }
-        div figure.Landscape div.Edicios5{
+        div figure.landscape div.Edicios5{
             background: url(./images/ClearMode/Fondo/Edificios\ 5.svg);
             width: 470px;
             height: 276px;
@@ -365,7 +359,7 @@
             position: absolute;
             animation: animParallax 20s linear infinite;
         }
-        div figure.Landscape div.Carretera{
+        div figure.landscape div.Carretera{
             background: url(./images/ClearMode/Fondo/Carretera\ 6.png);
             width: 470px;
             height: 276px;
@@ -374,16 +368,29 @@
             position: absolute;
             animation: animParallax 10s linear infinite;
         }
-        div figure.Landscape div.Carro{
+        section ul.attributes img.image{
             background: url(./images/ClearMode/BatPlaneFinal.png) no-repeat center;
             width: 380px;
             height: 150px;
             background-size: 100%;
-            margin-left: 40px;
-            margin-top: 135px;
+            margin-left: 140px;
+            margin-top: 228px;
             position: absolute;
+            z-index: 5;
+            border: none;
         }
-        
+           /* Stop */
+           figure.landscape.stop div.solNubes,
+        figure.landscape.stop div.Edificios3,
+        figure.landscape.stop div.Edificios4, figure.landscape.stop div.Edificios5, figure.landscape.stop div.Carretera{
+            animation-play-state: paused;
+        }
+        /* Reverse */
+        figure.landscape.reverse div.solNubes,
+        figure.landscape.reverse div.Edificios3,
+        figure.landscape.reverse div.Edificios4, figure.landscape.stop div.Edificios5, figure.landscape.stop div.Carretera{
+            animation-direction:reverse ;
+        }
         @keyframes Car-start {
             0%{top:450px}
             50%{top:449px}
@@ -415,15 +422,15 @@
                 <div class="refer"></div>
                 <div class="model"></div>
                 <div class="color"></div>
+                <img src="" class="image">
             </ul>
             <div>
-                <figure class="Landscape">
+                <figure class="landscape">
                     <div class="SolNubes"></div>
                     <div class="Edicios3"></div>
                     <div class="Edicios4"></div>
                     <div class="Edicios5"></div>
                     <div class="Carretera"></div>
-                    <div class="Carro"></div>
                 </figure>
             </div>
             <nav class="changevehicle">
@@ -432,37 +439,42 @@
                 <button class="next">Next</button>
             </nav>
             <nav class="controls">
-                <button class="start">Start</button>
-                <button class="fordWard">FordWord</button>
-                <button class="stop">Stop</button>
-                <button class="backWard">BackWord</button>
-                <button class="turnoff">Turnoff</button>
+                <button class="btnStart">Start</button>
+                <button class="btnForward">FordWord</button>
+                <button class="btnStop">Stop</button>
+                <button class="btnBackward">BackWord</button>
+                <button class="btnTurnOff">Turnoff</button>
             </nav>
         </section>
     </main>
     <script>
-        var cindex= 0
+        //variables
+        var cindex=0
+        //booleans
+        var engine = false
+        var move = false
+        //elements
         const main = document.querySelector('main')
-        const lands = document.querySelector('figure.Landscape')
-        //Buttons
+        const lands = document.querySelector('figure.landscape')
+        //--Buttons
         const btnDarkMode = document.querySelector('button.btnDarkMode')
-        const btnprev = document.querySelector('button.prev')
-        const btnnext = document.querySelector('button.next')
-        const btnstart = document.querySelector('button.start')
-        const btnfordWard = document.querySelector('button.fordWard')
-        const btnstop = document.querySelector('button.stop')
-        const btnturnoff = document.querySelector('button.turnoff')
-        const btnBack = document.querySelector('button.backWard')
-
-
+        const btnNext = document.querySelector('button.next')
+        const btnPrev = document.querySelector('button.prev')
+        const btnStart = document.querySelector('button.btnStart')
+        const btnForward = document.querySelector('button.btnForward')
+        const btnStop = document.querySelector('button.btnStop')
+        const btnBackward = document.querySelector('button.btnBackward')
+        const btnTurnOff = document.querySelector('button.btnTurnOff')
+        
         //Attributes
         const brand = document.querySelector('div.brand')
         const refer = document.querySelector('div.refer')
         const model = document.querySelector('div.model')
         const color = document.querySelector('div.color')
-        const image = document.querySelector('div.carro')
-        //Object
-        const vehicle = {
+        const image=document.querySelector('img.image')
+        //--object
+        const vehicle={
+            //attributes
             attributes:[
                 { brand: 'Wayne', refer: 'BatPlane', model: 2020, color: 'Black', Image: './images/ClearMode/BatPlaneFinal.png'},
                 { brand: 'lamborghini', refer: 'Bat', model: 2015, color: 'Red', Image: './images/DarkMode/RedCar.svg'},
@@ -471,84 +483,95 @@
                 
             ],
             //Methods
-            ShowAttributes: function(index) {
+            ShowAttributes:function(index){
                 brand.innerText = this.attributes[index].brand
                 refer.innerText = this.attributes[index].refer
                 model.innerText = this.attributes[index].model
                 color.innerText = this.attributes[index].color
                 image.setAttribute('src',this.attributes[index].image)
+
             },
-            darkMode: function() {
+            darkMode:function(){
                 main.classList.toggle('darkmode')
+                
             },
-            start: function() {
-                if (!engine) {
-                    image.classList.add('start');
-                    engine=true;
+            start:function(){
+                
+                if(!engine){
+                    
+                    image.classList.add('start')
+                    engine = true
                 }
             },
-            off: function() {
-                if(engine && !move) {
-                    image.classList.remove('start');
-                    engine=false;
-                }  
-            },
-            fordWard: function() {
+            forWard:function(){
                 if(engine && !move){
-                    lands.classList.remove('stop');
-                    lands.classList.remove('reverse');
-                    lands.classList.add('move');
-                    move=true;
+                    lands.classList.remove('stop')
+                    lands.classList.remove('reverse')
+                    lands.classList.add('move')
+                    move = true
                 }
+                
             },
-            stop: function() {
+            stop:function(){
                 if(engine && move){
-                    lands.classList.add('stop');
-                    move=false;
+                    
+                    lands.classList.add('stop')
+                    move = false
                 }
             },
-            backWar: function() {
+            backward:function(){
                 if(engine && !move){
-                    lands.classList.remove('stop');
-                    lands.classList.add('reverse');
-                    lands.classList.add('move');
-                    move=true;
+                    lands.classList.add('move')
+                    lands.classList.remove('stop')
+                    lands.classList.add('reverse')
+                    move = true
                 }
+                
+            },
+            turnOff:function(){
+                if(engine && !move){
+                    
+                    image.classList.remove('start')
+                    engine = false
+                }
+                
             }
         }
+        //---
         vehicle.ShowAttributes(0)
-
-        btnDarkMode.onclick=()=>{
+        //actions, dar click al bton
+        
+        btnDarkMode.onclick = () =>{
             vehicle.darkMode()
         }
-        
-       
-        btnnext.onclick = () => {
-            if (cindex < (vehicle.attributes.length-1)) {
-                cindex++
-                vehicle.showAttributes(cindex)
-            }
+        // Botones de andar
+        btnStart.onclick = () =>{
+            vehicle.start()
         }
-        btnprev.onclick = () => {
-            if (cindex > 0) {
+        btnForward.onclick = () =>{
+            vehicle.forWard()
+        }
+        btnStop.onclick = () =>{
+            vehicle.stop()
+        }
+        btnBackward.onclick = () =>{
+            vehicle.backward()
+        }
+        btnTurnOff.onclick = () =>{
+            vehicle.turnOff()
+        }
+        // Cambiar Carros
+        btnPrev.onclick = () =>{
+            if(cindex>0){
                 cindex--
-                vehicle.showAttributes(cindex)
+                vehicle.ShowAttributes(cindex)
             }
         }
-        btnstart.onclick=()=>{
-            vehicle.start();
-        }
-        btnturnoff.onclick=()=>{
-            vehicle.off();
-        }
-        btnstop.onclick=()=>{
-            vehicle.stop();
-        }
-        btnBack.onclick=()=>{
-            vehicle.backWard();
-        }
-        btnfordWard.onclick=()=>{
-            vehicle.forWard();
+        btnNext.onclick = () =>{
+            if(cindex<(vehicle.attributes.length-1)){
+                cindex++
+                vehicle.ShowAttributes(cindex)
+            }
         }
     </script>
 </section>
