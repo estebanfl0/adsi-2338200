@@ -7,7 +7,7 @@
     <title></title>
     <link rel="stylesheet" href="css/menu.css">
     <style>
-        .container{
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -41,8 +41,8 @@
             position: absolute;
             width: 63px;
             height: 62px;
-            left: 670px;
-            top: 22px;
+            left: 570px;
+            top: -140px;
             cursor: pointer;
             text-indent: -9999px;
             transition: transform 0.4s ease;
@@ -56,7 +56,7 @@
         header a:hover{
             transform: scale(1.2);
         }
-        section ul.attributes {
+        section{
             position: absolute;
             list-style: none;
             top: 160px;
@@ -127,12 +127,14 @@
         nav.controls {
             
             display: inline-block;
-            margin-top: 590px;
-            margin-left: 262px;
+            margin-top: -100px;
+            margin-left: 142px;
         }
         nav.controls button{
             margin-top: 20px;
             margin-bottom: 10px;
+            height: 65px;
+            width: 65px;
             text-indent: -9999px;
             padding: 50px;
             border: none;
@@ -140,42 +142,29 @@
         }
         nav.controls button.btnStart{
             background: url(./images/ClearMode/Group\ 24.svg) no-repeat;
-            height: 65px;
-            width: 65px;
             margin-left: 5px;
             transition: transform 0.4s ease;
+            cursor: pointer;
             z-index: inherit;
         }
         nav.controls button.btnForward{
             background: url(./images/ClearMode/Group\ 25.svg) no-repeat;
-            height: 65px;
-            width: 65px;
             transition: transform 0.4s ease;
-            z-index: inherit;
 
         }
         nav.controls button.btnStop{
             background: url(./images/ClearMode/Group\ 26.svg) no-repeat;
-            height: 65px;
-            width: 65px;
             transition: transform 0.4s ease;
-            z-index: inherit;
 
         }
         nav.controls button.btnBackward{
             background: url(./images/ClearMode/Group\ 27.svg) no-repeat;
-            height: 65px;
-            width: 65px;
             transition: transform 0.4s ease;
-            z-index: inherit;
 
         }
         nav.controls button.btnTurnOff{
             background: url(./images/ClearMode/Group\ 28.svg) no-repeat;
-            height: 65px;
-            width: 65px;
             transition: transform 0.4s ease;
-            z-index: inherit;
         }
         nav.controls button.btnStart:hover{ transform: scale(1.2);}
         nav.controls button.btnForward:hover{ transform: scale(1.2);}
@@ -211,27 +200,14 @@
         }
         main.darkmode nav.changevehicle button.prev {
             background: url(./images/DarkMode/btn-ScreenLeft.svg) no-repeat;
-            width: 68px;
-            height: 65px;
-            text-indent: -9999px;
-            border: none;
-            margin-left: 5px;
             transition: transform 0.4s ease;
         }
         main.darkmode nav.changevehicle button.next {
             background: url(./images/DarkMode/btn-ScreenRight.svg) no-repeat;
-            width: 80px;
-            height: 65px;
-            text-indent: -9999px;
-            border: none;
-            margin-right: 3px;
             transition: transform 0.4s ease;
         }
         main.darkmode nav.controls button.btnStart{
             background: url(./images/DarkMode/Group\ 11.svg) no-repeat;
-            height: 65px;
-            width: 65px;
-            margin-left: 5px;
             transition: transform 0.4s ease;
         }
         main.darkmode nav.controls button.btnForward{
@@ -266,7 +242,18 @@
             margin-top: 267px;
             position: absolute;
         }
-        
+        figure.landscape.move div.landscape{
+            animation: moveRight 6s linear infinite;
+            
+        }
+        figure.landscape.move div.SolNubes{
+            animation: moveRight 5s linear infinite;
+            
+        }
+        figure.landscape.move div.Edicios3{
+            animation: moveRight 4s linear infinite;
+            
+        }
         main.darkmode div figure.landscape div.SolNubes{
             background: url(./images/DarkMode/Fondo/2.svg);
             width: 470px;
@@ -404,47 +391,41 @@
         }
 
     </style>
+ </style>
 </head>
 <body>
-<section class="container">
     <main>
         <header>
             <a href="index.html">
-                    
-                    
             </a>
-            <h1></h1>
         </header>
         <section>
-            <button class="btnDarkMode">Dark Mode</button>
-            <ul class="attributes">
-                <div class="brand"></div>
-                <div class="refer"></div>
-                <div class="model"></div>
-                <div class="color"></div>
+            <button class="btnDarkMode"></button>
+            <div class="brand"></div>
+            <div class="refer"></div>
+            <div class="model"></div>
+            <div class="color"></div>
+            
+            <figure class="landscape">
                 <img src="" class="image">
-            </ul>
-            <div>
-                <figure class="landscape">
-                    <div class="SolNubes"></div>
-                    <div class="Edicios3"></div>
-                    <div class="Edicios4"></div>
-                    <div class="Edicios5"></div>
-                    <div class="Carretera"></div>
-                </figure>
-            </div>
-            <nav class="changevehicle">
-
+                <div class="sky"></div>
+                <div class="sun"></div>
+                <div class="edi1"></div>
+                <div class="street"></div>
+            </figure>
+            <nav class="changeVehicle">
                 <button class="prev">Prev</button>
                 <button class="next">Next</button>
+                
             </nav>
             <nav class="controls">
                 <button class="btnStart">Start</button>
-                <button class="btnForward">FordWord</button>
+                <button class="btnForward">Forward</button>
                 <button class="btnStop">Stop</button>
-                <button class="btnBackward">BackWord</button>
-                <button class="btnTurnOff">Turnoff</button>
+                <button class="btnBackward">Backward</button>
+                <button class="btnTurnOff">TurnOff</button>
             </nav>
+        
         </section>
     </main>
     <script>
@@ -476,11 +457,10 @@
         const vehicle={
             //attributes
             attributes:[
-                { brand: 'Wayne', refer: 'BatPlane', model: 2020, color: 'Black', Image: './images/ClearMode/BatPlaneFinal.png'},
-                { brand: 'lamborghini', refer: 'Bat', model: 2015, color: 'Red', Image: './images/DarkMode/RedCar.svg'},
-                { brand: 'Ford', refer: 'Fiesta', model: 2016, color: ' Blue', Image: './images/ClearMode/car03.png'},
-                { brand: 'Fiat', refer: '500', model: 2007, color: 'Green', Image: './images/DarkMode/carGreen.png'}
-                
+                {brand:'Toyota',    refer:'Yaris',  model:'2020', color:'Red', image:'./images/ClearMode/BatPlaneFinal.png'},
+                {brand:'Renault',   refer:'Clio',   model:'2019', color:'Blue', image:'./images/DarkMode/RedCar.svg'},
+                {brand:'Chevrolet', refer:'Onix',   model:'2020', color:'Green',  image:'./images/ClearMode/car03.png'},
+                {brand:'Ford',      refer:'Fiesta', model:'2020', color:'Orange',   image:'./images/DarkMode/carGreen.png'}
             ],
             //Methods
             ShowAttributes:function(index){
@@ -489,7 +469,6 @@
                 model.innerText = this.attributes[index].model
                 color.innerText = this.attributes[index].color
                 image.setAttribute('src',this.attributes[index].image)
-
             },
             darkMode:function(){
                 main.classList.toggle('darkmode')
@@ -573,7 +552,8 @@
                 vehicle.ShowAttributes(cindex)
             }
         }
+        
+        
     </script>
-</section>
 </body>
 </html>
