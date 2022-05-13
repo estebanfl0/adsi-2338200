@@ -4,394 +4,282 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Vehicle Object</title>
     <link rel="stylesheet" href="css/menu.css">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-        }
-        main {
 
-            background: url(./images/ClearMode/MockUpFinal.svg) no-repeat center;
+        main{
+            background:url(./images/ClearMode/MockUpFinal.svg) no-repeat;
             border: none;
-            position: relative;
+            width: 570px;
+            height: 700px;
+            position:fixed;
+            border-radius:inherit;
         }
-        header a:link, header a:visited{
-            background: url(./images/ClearMode/Btn-Home.svg) no-repeat;
-            color: #FFE485;
-            width: 63px;
-            height: 62px;
-            top: 22px;
-            left: 238px;
-            transition: transform 0.1s ease ;
+        main.darkmode{
+            background: url(./images/DarkMode/NocturnoFinal.svg) no-repeat;
         }
-        header a:hover {
-            color: black;
-        }
-        section {
-            position: absolute;
-            width: 1000px;
-            height: 750px;
-        }
-        section button.btnDarkMode {
-            background: url(./images/ClearMode/Btn-DarkMode.svg);
-            position: absolute;
-            width: 63px;
-            height: 62px;
-            left: 570px;
-            top: -140px;
-            cursor: pointer;
-            text-indent: -9999px;
-            transition: transform 0.4s ease;
-            border: none;
-            position: absolute;
-
-        }
-        section button.btnDarkMode:hover{
-            transform: scale(1.2);
-        }
-        header a:hover{
-            transform: scale(1.2);
+        header a:link,
+        header a:visited{
+            color: #f7db72;
+            top: 50px;
+            left: 20px;
         }
         section{
-            position: absolute;
-            list-style: none;
-            top: 160px;
-            left: 105px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        section ul.attributes div.brand, section ul.attributes div.refer{
-            margin-top: -10px;
-            margin-left: 150px;
-            margin-right: -1px;
-            width: 92px;
-            margin-bottom: 90px;
             position: relative;
-
-        }
-        section ul.attributes div.model {
-            margin-top: 55px;
-            margin-left: 150px;
-            width: 92px;
-            margin-bottom: 80px;
-            position: absolute;
-
-        }
-        section ul.attributes div.color{
-            margin-top: 55px;
-            margin-left: 390px;
-            width: 92px;
-            margin-bottom: 80px;
-            position: absolute;
-        }
-        nav.changevehicle{
-            position: absolute;
-            top: 360px;
-            left: 260px;
-
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
-            width: 490px;
-        }
-        nav.changevehicle button.prev {
-            background: url(./images/ClearMode/Btn-ScreenLeft.svg) no-repeat;
-            width: 68px;
+            width: 110px;
+            padding: 0px;
             height: 65px;
-            text-indent: -9999px;
-            border: none;
-            margin-left: 5px;
-            transition: transform 0.4s ease;
+            left: 349px;
+            top: 24px;
         }
-        nav.changevehicle button.next {
-            background: url(./images/ClearMode/Btn-ScreenRight.svg) no-repeat;
-            width: 80px;
-            height: 65px;
-            text-indent: -9999px;
-            border: none;
-            margin-right: 3px;
-            transition: transform 0.4s ease;
-        }
-        main section nav.changevehicle button.prev:hover{
-            transform: translate(-4.5px);
-        }
-        main section nav.changevehicle button.next:hover{
-            transform: translate(5px);
-        }
-        nav.controls {
+        /*Dark mode Parallax*/
+        main.darkmode section button.btnDarkMode{
+            background: url(./images/DarkMode/btn-ClearMode.svg) no-repeat center;
             
-            display: inline-block;
-            margin-top: -100px;
-            margin-left: 142px;
         }
-        nav.controls button{
-            margin-top: 20px;
-            margin-bottom: 10px;
-            height: 65px;
-            width: 65px;
-            text-indent: -9999px;
-            padding: 50px;
-            border: none;
-            transition: transform 0.4s ease;
-        }
-        nav.controls button.btnStart{
-            background: url(./images/ClearMode/Group\ 24.svg) no-repeat;
-            margin-left: 5px;
-            transition: transform 0.4s ease;
-            cursor: pointer;
-            z-index: inherit;
-        }
-        nav.controls button.btnForward{
-            background: url(./images/ClearMode/Group\ 25.svg) no-repeat;
-            transition: transform 0.4s ease;
-
-        }
-        nav.controls button.btnStop{
-            background: url(./images/ClearMode/Group\ 26.svg) no-repeat;
-            transition: transform 0.4s ease;
-
-        }
-        nav.controls button.btnBackward{
-            background: url(./images/ClearMode/Group\ 27.svg) no-repeat;
-            transition: transform 0.4s ease;
-
-        }
-        nav.controls button.btnTurnOff{
-            background: url(./images/ClearMode/Group\ 28.svg) no-repeat;
-            transition: transform 0.4s ease;
-        }
-        nav.controls button.btnStart:hover{ transform: scale(1.2);}
-        nav.controls button.btnForward:hover{ transform: scale(1.2);}
-        nav.controls button.btnStop:hover{ transform: scale(1.2);}
-        nav.controls button.btnBackward:hover{ transform: scale(1.2);}
-        nav.controls button.btnTurnOff:hover{transform: scale(1.2);}
-        main.darkmode {
-            background: url(./images/DarkMode/NocturnoFinal.svg) no-repeat center;
-            border: none;
-            position: relative;
-            color: aliceblue;
-        }
-        main.darkmode section button.btnDarkMode {
-            background: url(./images/DarkMode/btn-ClearMode.svg);
-            position: absolute;
-            width: 63px;
-            height: 62px;
-            left: 670px;
-            top: 22px;
-            cursor: pointer;
-            text-indent: -9999px;
-            border: none;
-            position: absolute;
-
-        }
-        main.darkmode header a:link, header a:visited{
-            background: url(./images/DarkMode/btn-Home.svg) no-repeat;
-            color: #FFE485;
-            width: 63px;
-            height: 62px;
-            top: 22px;
-            left: 238px;
-        }
-        main.darkmode nav.changevehicle button.prev {
-            background: url(./images/DarkMode/btn-ScreenLeft.svg) no-repeat;
-            transition: transform 0.4s ease;
-        }
-        main.darkmode nav.changevehicle button.next {
-            background: url(./images/DarkMode/btn-ScreenRight.svg) no-repeat;
-            transition: transform 0.4s ease;
-        }
-        main.darkmode nav.controls button.btnStart{
-            background: url(./images/DarkMode/Group\ 11.svg) no-repeat;
-            transition: transform 0.4s ease;
-        }
-        main.darkmode nav.controls button.btnForward{
-            background: url(./images/DarkMode/Group\ 12.svg) no-repeat;
-            height: 65px;
-            width: 65px;
-            transition: transform 0.4s ease;
-        }
-        main.darkmode nav.controls button.btnStop{
-            background: url(./images/DarkMode/Group\ 13.svg) no-repeat;
-            height: 65px;
-            width: 65px;
-            transition: transform 0.4s ease;
-        }
-        main.darkmode nav.controls button.btnBackward{
-            background: url(./images/DarkMode/Group\ 14.svg) no-repeat;
-            height: 65px;
-            width: 65px;
-            transition: transform 0.4s ease;
-        }
-        main.darkmode nav.controls button.btnTurnOff{
-            background: url(./images/DarkMode/Group\ 15.svg) no-repeat;
-            height: 65px;
-            width: 65px;
-            transition: transform 0.4s ease;
-        }
-        main.darkmode div figure.landscape{
-            background: url(./images/DarkMode/Fondo/1.svg);
+        main.darkmode section figure.landscape div.sky{
+            background: url(./images/DarkMode/Fondo/1.svg) repeat-x;
             width: 470px;
             height: 276px;
-            margin-left: 263px;
-            margin-top: 267px;
+        }
+        main.darkmode section figure.landscape div.edi1{
+            background: url(images/dark.svg/edi1.png) repeat-x;
+            position: absolute;
+            top: 100px;
+            width: 345px;
+            height: 110px;
+        }
+        section button.btnDarkMode{
+            background: url(./images/ClearMode/Btn-DarkMode.svg) no-repeat center;
+            position: absolute;
+            width: 68px;
+            height: 69px;
+            border: none;
+            cursor: pointer;
+            margin-left: -330px;
+            margin-top: -15px;
+        }
+        section div{
+            color: black;
+            
+        }
+        main.darkmode section div{
+            color: white;
+        }
+        section div.brand{
+            position: absolute;
+            margin-top: 130px;
+            right: 320px;
+        }
+        section div.refer{
+            position: absolute;
+            margin-top: 130px;
+            right: 83px;
+        }
+        section div.model{
+            position: absolute;
+            margin-top: 198px;
+            right: 320px;
+        }
+        section div.color{
+            position: absolute;
+            margin-top: 198px;
+            right: 83px;
+        }
+        figure.landscape{
+            position: absolute;
+            width: 345px;
+            height: 250px;
+            left: -353px;
+            top: 260px;
+            
+        }
+        figure.landscape div{
+            width: 345px;
+            height: 250px;
+            bottom: 28px;
             position: absolute;
         }
-        figure.landscape.move div.landscape{
+        
+        img.image{
+            
+            background-size: contain;
+            position: absolute;
+            width: 380px;
+            height: 230px;
+            top: 80px;
+            left: 20px;
+            z-index: 5;
+            transition: all 1s ease-in;
+            
+        }
+        /*Animation Start*/
+        
+        section img.start{
+            animation: animStart 0.25s ease infinite;
+        }
+        @keyframes animStart {
+            0%{top: 200px;}
+            100%{top: 199px;}
+        }
+        figure.landscape div.sky{
+            background: url(./images/ClearMode/Fondo/Sky\ Pink\ 1.svg) repeat-x;
+            position: absolute;
+            width: 470px;
+            height: 276px;
+            top: -42px;
+            transition: all 1s ease-in;
+            margin-left: -12px;
+    
+        }
+        
+        
+        figure.landscape div.edi1{
+        background: url(./images/ClearMode/Fondo/Sol\ y\ nubes\ 2.svg) repeat-x;
+        position: absolute;
+            width: 40px;
+            height: 276px;
+            top: -42px;
+            margin-left: -12px;
+        }
+        figure.landscape div.street{
+        background: url(./images/ClearMode/Fondo/) repeat-x;
+        position: relative;
+        width: 470px;
+        height: 40px;
+        top: 0px;
+        border: 2px solid red ;
+        /* move parallax */
+    
+        }
+        figure.landscape.move div.sky{
             animation: moveRight 6s linear infinite;
             
         }
-        figure.landscape.move div.SolNubes{
+        figure.landscape.move div.edi1{
             animation: moveRight 5s linear infinite;
             
         }
-        figure.landscape.move div.Edicios3{
+        figure.landscape.move div.street{
             animation: moveRight 4s linear infinite;
             
         }
-        main.darkmode div figure.landscape div.SolNubes{
-            background: url(./images/DarkMode/Fondo/2.svg);
-            width: 470px;
-            height: 276px;
-            margin-left: 0px;
-            margin-top: 0px;
-            position: absolute;
-            animation: animParallax 60s linear infinite;
-        }
-        main.darkmode div figure.landscape div.Edicios3{
-            background: url(./images/DarkMode/Fondo/3.svg);
-            width: 470px;
-            height: 276px;
-            margin-left: 0px;
-            margin-top: 0px;
-            position: absolute;
-            animation: animParallax 50s linear infinite;
-        }
-        main.darkmode div figure.landscape div.Edicios4{
-            background: url(./images/DarkMode/Fondo/4.svg);
-            width: 470px;
-            height: 276px;
-            margin-left: 0px;
-            margin-top: 0px;
-            position: absolute;
-            animation: animParallax 30s linear infinite;
-        }
-        main.darkmode div figure.landscape div.Edicios5{
-            background: url(./images/DarkMode/Fondo/5.svg);
-            width: 470px;
-            height: 276px;
-            margin-left: 0px;
-            margin-top: 0px;
-            position: absolute;
-            animation: animParallax 20s linear infinite;
-        }
-        main.darkmode div figure.landscape div.Carretera{
-            background: url(./images/DarkMode/Fondo/6.svg);
-            width: 470px;
-            height: 276px;
-            margin-left: 0px;
-            margin-top: 0px;
-            position: absolute;
-            animation: animParallax 10s linear infinite;
-        }
-        
-       
-        div figure.landscape{
-            background: url(./images/ClearMode/Fondo/Sky\ Pink\ 1.svg);
-            width: 470px;
-            height: 276px;
-            margin-left: 263px;
-            margin-top: 267px;
-            position: absolute;
-        }
-        
-        div figure.landscape div.SolNubes{
-            background: url(./images/ClearMode/Fondo/Sol\ y\ nubes\ 2.svg);
-            width: 470px;
-            height: 276px;
-            margin-left: 0px;
-            margin-top: 0px;
-            position: absolute;
-            animation: animParallax 60s linear infinite;
-        }
-        div figure.landscape div.Edicios3{
-            background: url(./images/ClearMode/Fondo/Edificios\ 3.svg);
-            width: 470px;
-            height: 276px;
-            margin-left: 0px;
-            margin-top: 0px;
-            position: absolute;
-            animation: animParallax 50s linear infinite;
-        }
-        div figure.landscape div.Edicios4{
-            background: url(./images/ClearMode/Fondo/Edificios\ 4.svg);
-            width: 470px;
-            height: 276px;
-            margin-left: 0px;
-            margin-top: 0px;
-            position: absolute;
-            animation: animParallax 30s linear infinite;
-        }
-        div figure.landscape div.Edicios5{
-            background: url(./images/ClearMode/Fondo/Edificios\ 5.svg);
-            width: 470px;
-            height: 276px;
-            margin-left: 0px;
-            margin-top: 0px;
-            position: absolute;
-            animation: animParallax 20s linear infinite;
-        }
-        div figure.landscape div.Carretera{
-            background: url(./images/ClearMode/Fondo/Carretera\ 6.png);
-            width: 470px;
-            height: 276px;
-            margin-left: 0px;
-            margin-top: 0px;
-            position: absolute;
-            animation: animParallax 10s linear infinite;
-        }
-        section ul.attributes img.image{
-            background: url(./images/ClearMode/BatPlaneFinal.png) no-repeat center;
-            width: 380px;
-            height: 150px;
-            background-size: 100%;
-            margin-left: 140px;
-            margin-top: 228px;
-            position: absolute;
-            z-index: 5;
-            border: none;
-        }
-           /* Stop */
-           figure.landscape.stop div.solNubes,
-        figure.landscape.stop div.Edificios3,
-        figure.landscape.stop div.Edificios4, figure.landscape.stop div.Edificios5, figure.landscape.stop div.Carretera{
+        /* Stop */
+        figure.landscape.stop div.sky,
+        figure.landscape.stop div.edi1,
+        figure.landscape.stop div.street{
             animation-play-state: paused;
         }
         /* Reverse */
-        figure.landscape.reverse div.solNubes,
-        figure.landscape.reverse div.Edificios3,
-        figure.landscape.reverse div.Edificios4, figure.landscape.stop div.Edificios5, figure.landscape.stop div.Carretera{
+        figure.landscape.reverse div.sky,
+        figure.landscape.reverse div.edi1,
+        figure.landscape.reverse div.street{
             animation-direction:reverse ;
         }
-        @keyframes Car-start {
-            0%{top:450px}
-            50%{top:449px}
-            100%{top:448px}
-
-        }
-        @keyframes animParallax{
+        @keyframes moveRight {
             0%{background-position: 0;}
-            100%{background-position: -500px;}
-
+            100%{background-position: -690.9px}
         }
+        
+         nav.changeVehicle{
+            position: absolute;
+            top: 220px;
+            display: flex;
+            flex-direction: row;
+            width: 370px;
+            height: 100px;
+            align-items: flex-start;
+            justify-content: space-between;
+            right: -8px;
+            
+            padding: 20px;
 
+            
+        }
+        main section nav.changeVehicle button{
+            border: none;
+            text-indent: -9999px;
+            width: 63px;
+            height: 63px;
+            top: 22px;
+            left: 338px;
+            cursor: pointer; 
+            
+        }
+       
+        button.prev{
+            background: url(./images/ClearMode/Btn-ScreenLeft.svg) no-repeat;
+            margin-left: 200px;
+        }
+        button.next{
+            background: url(./images/ClearMode/Btn-ScreenRight.svg) no-repeat;
+        }
+        main.darkmode button.prev{
+            background: url(./images/DarkMode/btn-ScreenLeft.svg) no-repeat;
+        }
+        main.darkmode button.next{
+            background: url(./images/DarkMode/btn-ScreenRight.svg) no-repeat;
+            width: 70px;
+        }
+        button.prev:hover{
+            transform: translateX(-2px);
+        }
+        button.next:hover{
+            transform: translateX(2px);
+        }
+        nav.controls{
+            width: 399px;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            top: 550px;
+            left: -338px;
+            height: 100px;
+            padding: 20px;
+        }
+        nav.controls button{
+            height: 68px;
+            width: 68px;
+            text-indent: -9999px;
+            border: none;
+            
+        }
+        nav.controls button.btnStart{
+            background: url(./images/DarkMode/Group\ 11.svg) no-repeat center;
+            cursor: pointer;
+        }
+        nav.controls button.btnForward{
+            background: url(./images/DarkMode/Group\ 12.svg) no-repeat center;
+            cursor: pointer;
+        }
+        nav.controls button.btnStop{
+            background: url(./images/DarkMode/Group\ 13.svg) no-repeat center;
+            cursor: pointer;
+        }
+        nav.controls button.btnBackward{
+            background: url(./images/DarkMode/Group\ 14.svg) no-repeat center;
+            cursor: pointer;
+        }
+        nav.controls button.btnTurnOff{
+            background: url(./images/DarkMode/Group\ 15.svg) no-repeat center;
+            cursor: pointer;
+        }
+        nav.controls button:hover{
+            transform: scale(1.25);
+        }
+        /* @media(max-width:1024px){
+            body{
+                width: 800px;
+            }
+        }
+        @media(max-width:800px){
+            body{
+                width:420px;
+            }
+        } */
     </style>
- </style>
 </head>
 <body>
     <main>
@@ -408,10 +296,20 @@
             
             <figure class="landscape">
                 <img src="" class="image">
-                <div class="sky"></div>
-                <div class="sun"></div>
-                <div class="edi1"></div>
-                <div class="street"></div>
+                <div class="sky">
+                    <div class="sun">
+                        <div class="edi1">
+                            <div class="edi2">
+                                <div class="street">
+
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+            </div>
+                
+                
             </figure>
             <nav class="changeVehicle">
                 <button class="prev">Prev</button>
@@ -457,10 +355,10 @@
         const vehicle={
             //attributes
             attributes:[
-                {brand:'Toyota',    refer:'Yaris',  model:'2020', color:'Red', image:'./images/ClearMode/BatPlaneFinal.png'},
-                {brand:'Renault',   refer:'Clio',   model:'2019', color:'Blue', image:'./images/DarkMode/RedCar.svg'},
+                {brand:'Wayne',    refer:'BatPlane',  model:'2020', color:'Black', image:'./images/ClearMode/BatPlaneFinal.png'},
+                {brand:'Ferrari',   refer:'testarossa',   model:'2019', color:'Red', image:'./images/DarkMode/RedCar.svg'},
                 {brand:'Chevrolet', refer:'Onix',   model:'2020', color:'Green',  image:'./images/ClearMode/car03.png'},
-                {brand:'Ford',      refer:'Fiesta', model:'2020', color:'Orange',   image:'./images/DarkMode/carGreen.png'}
+                {brand:'Jeep',      refer:'Wrangler', model:'2020', color:'Orange',   image:'./images/DarkMode/carGreen.png'}
             ],
             //Methods
             ShowAttributes:function(index){

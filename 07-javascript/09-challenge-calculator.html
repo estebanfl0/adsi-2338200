@@ -179,206 +179,146 @@
         </section>
     </main>
     <script>
-        const display = document.querySelector('input.value')
+        //function
+                function deletLastValue() {
+            display.value= display.value.slice(0,-1)
+            if ((isNaN(display.value.slice(-1)))) {
+                operStatus=false
+            }
+            else {
+                operStatus=true
+            }display.value= display.value.slice(0,-1)
+            if ((isNaN(display.value.slice(-1)))) {
+                operStatus=false
+            }
+            else {
+                operStatus=true
+            }
+        }
+        function validateLength() {
+            if(display.value.length < 55 ){
+                return true
+            } else {
+                return false
+            }
+        };
+        function addToDisplay(c) {
+            if(validateLength()) {
+                display.value+=c
+            }
+        };
+        function clearDisplay(){
+            display.value=''
+            operStatus=false
+        }
+        function igual() {
+            display.value=(eval(display.value))
+        }
+//events
+        document.onkeyup = (evt) => {
+            //alert(evt.keyCode)
+            switch (evt.keyCode) {
+                case 8:
+                    deletLastValue()
+                case 96:
+                case 48:
+                    display.value += 0
+                    break;
+                case 97:
+                case 49:
+                    display.value += 1
+                    break;
+                case 98:
+                case 50:
+                    display.value += 2
+                    break;
+                case 99:
+                case 51:
+                    display.value += 3
+                    break;
+                case 100:
+                case 52:
+                    display.value += 4
+                    break;
+                case 101:
+                    display.value += 5
+                    break;
+                case 53:
+                    if (evt.shiftKey) {
+                        display.value+='%'
+                        break;
+                    }
+                    else {
+                        display.value += 5
+                        break;
+                }
+                case 102:
+                case 54:
+                    display.value += 6
+                    break;
+                case 103:
+                case 55:
+                    display.value += 7
+                    break;
+                case 104:
+                case 56:
+                    display.value += 8
+                    break;
+                case 105:
+                case 57:
+                    display.value += 9
+                    break;
+                case 222:
+                    if(evt.altKey){
+                        display.value +='^'
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+//value display
+        var display = document.querySelector('input.value')
 
-        
-        const bracket = document.querySelector('button.brac' + 'button.ket')
+        //
+        const back = document.querySelector('button.back')
+        const clear = document.querySelector('button.btn-clear')
+        const btnigual = document.querySelector('button.btn-equal')
 
-        const back = document.querySelector('button.back')
-        const clear = document.querySelector('button.btn-clear')
-        const equal = document.querySelector('button.btn-equal')
-        function result() {
-            A = 10 + 10 + 10
+        const btnsNumbers = document.querySelectorAll('button[data-num]')
+        const btnsOperators = document.querySelectorAll('button[data-opr]')
 
-            var expresion = display
-            console.log(parseInt("11 +" + 10 + 1))
-        }
+        var operStatus = false
+        //action
+        clear.onclick=()=> {
+            display.value=''
+            operStatus=false
+            
+        }
+        back.onclick=()=> {
+            deletLastValue()
+        }
+        btnigual.onclick=()=> {
+            igual()
+        }
+        //activation click event in all numbers and operators
+        for (let i = 0; i < btnsNumbers.length; i++) {
+            btnsNumbers[i].onclick =function() {
+                addToDisplay(this.getAttribute('data-num'))
+                operStatus=true
+            };
+            
+        };
+        for (let i = 0; i < btnsOperators.length; i++) {
+            
+            btnsOperators[i].onclick = function() {
+                if (operStatus) {
+                    addToDisplay(this.getAttribute('data-opr'))
+                    operStatus=false
+                }
+            }
+        }
 
-        const btnsNumbers=document.querySelectorAll('button[data-num]')
-        const btnsOperators=document.querySelectorAll('button[data-opr]')
-        
-        var operStatus = false
-
-        //Events
-        // document.onkeypress = (evt) => {
-        //     switch (evt.keyCode) {                
-        //         case 8:
-        //             deleteLastValue()
-        //             break;
-        //         default:
-        //             break;
-        //     }
-        // }
-
-        document.onkeyup = (evt) => {
-            //alert(evt.keyCode)
-            switch (evt.keyCode) {
-                //Back
-                case 8:
-                if (operStatus) {
-                        deleteLastValue()
-                        operStatus = false
-
-                    }
-                    break;
-                //Supr
-                case 46:
-                if (operStatus) {
-                        ClearStreem()
-                        operStatus = false
-
-                    }
-                    break;
-                //suma
-                case 107:
-                if (operStatus) {
-                        display.value += '+'
-                        operStatus = false
-                    }
-                    break;
-                //resta
-                case 109:
-                if (operStatus) {
-                        display.value += '-'
-                        operStatus = false
-                    }
-                    break;
-                //Multiplicación
-                case 106:
-                if (operStatus) {
-                        display.value += '*'
-                        operStatus = false
-                    }
-                    break;
-                //Division
-                case 111:
-                if (operStatus) {
-                        display.value += '/'
-                        operStatus = false
-                    }
-                    break;
-                //Punto
-                case 190:
-                if (operStatus) {
-                        display.value += '.'
-                        operStatus = false
-                    }
-                    break;
-                //Números
-                case 96:
-                case 48:
-                    display.value += 0
-                    operStatus = true
-                    break;
-                case 97:
-                case 49:
-                    display.value += 1
-                    operStatus = true
-                    break;
-                case 98:
-                case 50:
-                    display.value += 2
-                    operStatus = true
-                    break;
-                case 99:
-                case 51:
-                    display.value += 3
-                    operStatus = true
-                    break;
-                case 100:
-                case 52:
-                    display.value += 4
-                    operStatus = true
-                    break;
-                case 101:
-                    display.value += 5
-                    operStatus = true
-                    break;
-                case 53:
-                    if (evt.shifKey && operStatus) {
-                            display.value += '%'
-                            operStatus = false
-                    } else {
-                        display.value += 5
-                        operStatus = true
-                    }
-                    break;
-                case 102:
-                case 54:
-                    display.value += 6
-                    operStatus = true
-                    break;
-                case 103:
-                case 55:
-                    display.value += 7
-                    operStatus = true
-                    break;
-                case 104:
-                case 56:
-                    display.value += 8
-                    operStatus = true
-                    break;
-                case 105:
-                case 57:
-                    display.value += 9
-                    operStatus = true
-                    break;
-                default:
-                    break;
-            }
-        }
-
-
-
-        //action
-        clear.onclick= () => {
-            ClearStreem()
-
-        }
-        function ClearStreem() {
-            display.value = ''
-            operStatus = false
-        }
-        
-        back.onclick = () => {
-            deleteLastValue()
-        }
-        for (let i = 0; i < btnsNumbers.length; i++) {
-            btnsNumbers[i].onclick = function() {
-                operStatus = true
-                addToDisplay( btnsNumbers[i].getAttribute('data-num'))
-            }
-        }
-
-        for (let i = 0; i < btnsOperators.length; i++) {
-            btnsOperators[i].onclick = function() {
-                if (operStatus) {
-                    addToDisplay(this.getAttribute('data-opr'))
-                    operStatus = false
-                }
-            }
-        }
-        function validateLength() {
-            if(display.value.length < 18 ){
-                return true
-            } else {
-                return false
-            }
-        }
-        function deleteLastValue() {
-            display.value = display.value.slice(0, -1)
-            if (isNaN(display.value.slice(-1))) {
-                operStatus = false
-            } else {
-                operStatus = true
-            }
-        }
-        function addToDisplay(c) {
-            
-            if (validateLength) {
-                display.value+=c
-            }
-        }
 
     </script>
     
