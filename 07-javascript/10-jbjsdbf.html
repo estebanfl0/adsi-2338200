@@ -111,7 +111,7 @@
             top: 80px;
             left: 20px;
             z-index: 5;
-            
+            transition: all 1s ease-in;
             
         }
         /*Animation Start*/
@@ -141,7 +141,6 @@
             width: 40px;
             height: 276px;
             top: -42px;
-            transition: all 1s ease-in;
             margin-left: -12px;
         }
         figure.landscape div.street{
@@ -150,7 +149,6 @@
         width: 470px;
         height: 40px;
         top: 0px;
-        transition: all 1s ease-in;
         border: 2px solid red ;
         /* move parallax */
     
@@ -193,7 +191,6 @@
             height: 100px;
             align-items: flex-start;
             justify-content: space-between;
-            transition: transform 0.2s ease;
             right: -8px;
             
             padding: 20px;
@@ -247,7 +244,6 @@
             width: 68px;
             text-indent: -9999px;
             border: none;
-            transition: transform 0.2s ease;
             
         }
         nav.controls button.btnStart{
@@ -359,10 +355,10 @@
         const vehicle={
             //attributes
             attributes:[
-                {brand:'Toyota',    refer:'Yaris',  model:'2020', color:'Red', image:'./images/ClearMode/BatPlaneFinal.png'},
-                {brand:'Renault',   refer:'Clio',   model:'2019', color:'Blue', image:'./images/DarkMode/RedCar.svg'},
+                {brand:'Wayne',    refer:'BatPlane',  model:'2020', color:'Black', image:'./images/ClearMode/BatPlaneFinal.png'},
+                {brand:'Ferrari',   refer:'testarossa',   model:'2019', color:'Red', image:'./images/DarkMode/RedCar.svg'},
                 {brand:'Chevrolet', refer:'Onix',   model:'2020', color:'Green',  image:'./images/ClearMode/car03.png'},
-                {brand:'Ford',      refer:'Fiesta', model:'2020', color:'Orange',   image:'./images/DarkMode/carGreen.png'}
+                {brand:'Jeep',      refer:'Wrangler', model:'2020', color:'Orange',   image:'./images/DarkMode/carGreen.png'}
             ],
             //Methods
             ShowAttributes:function(index){
