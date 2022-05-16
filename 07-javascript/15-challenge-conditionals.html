@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/menu.css">
+    <style>
+        /*gener*/
+    div.System {
+        background: url(./images/Conditionals/Mockup.svg) no-repeat center;
+        width: 445px;
+        height: 700px;
+        margin: 10px auto;
+    }
+    div.gener{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    button.female, button.male {
+        width: 135px;
+        height: 150px;
+        cursor: pointer;
+        border: none;
+        margin-top: 170px;
+    }
+    button.female{
+        background: url(./images/Conditionals/Fem.svg) no-repeat center;
+    }
+    button.male {
+        background: url(./images/Conditionals/Male.svg) no-repeat center;
+    }
+    /*INSERATR NOMBRE */
+    div.fullname h1{
+        background: url(./images/Conditionals/H1\ Fullname.svg) no-repeat center;
+        width: 205.09px;
+        height: 24px;
+    }
+    div.fullname div.entername{
+        background: url(./images/Conditionals/FullName.svg) no-repeat center;
+        width: 382px;
+        height: 40px; 
+        margin-left: 63px;
+        position: absolute;
+    }
+    div.entername input, div.calendar input {
+        background-color: transparent;
+        justify-content: right;
+        display: flex;
+        width: 78%;
+        height: 60%;
+        margin-left: 55px;
+        border: none;
+        margin-top: 8px;
+        position: relative;
+        outline: none;
+        text-align: center;
+        font-size: 18px;
+    }
+    /*INSERATR FECHA DE NACIMIENTO */
+
+    div.calendar h1{
+        background: url(./images/Conditionals/h1\ Calendar.svg) no-repeat center;
+        width: 205.09px;
+        height: 24px;
+    }
+    div.calendar div.enterbirthdate {
+        background: url(./images/Conditionals/Calendar.svg) no-repeat center;
+        width: 382px;
+        height: 40px; 
+        margin-left: 63px;
+        position: absolute;
+    }
+
+    /*VALIDATE*/
+    button.validate {
+        background: url(./images/Conditionals/Validate.svg) no-repeat center;
+        width: 220px;
+        height: 45px;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                    </svg>
+                    
+            </a>
+            <h1></h1>
+        </header>
+        <section>
+            <div class="System">
+                <div class="gener">
+                    <button class="female"></button>
+                    <button class="male"></button>
+                </div>
+                <div class="fullname">
+                    <h1></h1>
+                    <div class="entername"><input type="text" placeholder="Ingrese su nombre"></div>
+                </div>
+                <br>
+                <br>
+                <div class="calendar">
+                    <h1></h1>
+                    <div class="enterbirthdate"><input type="date" ></div>
+                </div>
+                <br>
+                <br>
+                <button class="validate"></button>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
