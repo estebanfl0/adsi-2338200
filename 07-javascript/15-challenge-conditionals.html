@@ -196,7 +196,7 @@
         const text = document.querySelector('input.text')
         var edadEnter = document.querySelector('h1.edad')
         //Back
-        var fecha = document.querySelector(parseInt('input.fechaNacimiento'))
+        var fecha = document.querySelector('input.fechaNacimiento')
         var name = ''
         //EDAD
     
@@ -229,14 +229,15 @@
 
         var mainCheck = 
         validate.onclick = () =>{
+            var num = parseInt(fecha.value)
             if (male.classList.contains('check') || female.classList.contains('check')){
                 validate.classList.toggle('back')
 
-                if (male.classList.contains('check') && consulteCheck == false && parseInt(fecha) >= 18) {
+                if (male.classList.contains('check') && consulteCheck == false && num >= 18) {
                     main.classList.add('guerra')
                     consulteCheck = true
 
-                }else if (male.classList.contains('check') && consulteCheck == false && parseInt(fecha) < 18) {
+                }else if (male.classList.contains('check') && consulteCheck == false && num < 18) {
                     main.classList.add('noguerra')
                     consulteCheck=true
                     
