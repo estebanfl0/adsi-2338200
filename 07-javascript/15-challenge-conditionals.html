@@ -11,7 +11,6 @@
     main.validate{
         background-color: #445446;
         background: url(./images/ClearMode/MockUpFinal.svg) no-repeat center;
-        
     }
         /*gener*/
     div.System {
@@ -19,29 +18,43 @@
         width: 445px;
         height: 700px;
         margin: 10px auto;
+    } div.calendar h1.edad{display: none;}
+    .guerra div.calendar h1.edad, .noguerra div.calendar h1.edad, .Fnoguerra div.calendar h1.edad{
+        color: aliceblue;
+        font-size: 2rem;
+        z-index: inherit;
     }
-    /* .guerra{
-        display: none;
-    } */
     .guerra div.System{
         background: url(./images/Conditionals/GOTOWAR/GO\ TO\ WAR.svg) no-repeat center;
         width: 445px;
         height: 700px;
         margin: 10px auto;
-    }.guerra div.gener, .guerra h1.data, .guerra div.calendar, .guerra div.Valid, .guerra div.entername {display: none;}
-     {
+    }.guerra div.gener, .guerra h1.data, .guerra div.calendar, .guerra div.entername {display: none;}
+     .guerra{
         background: url(./images/Conditionals/GOTOWAR/) no-repeat center;
-        width: 382px;
-        height: 40px; 
-        margin-left: 63px;
-        position: absolute;
+       
     }
+    .noguerra div.System{
+        background: url(./images/Conditionals/NOTWAR/DONOTGOTOWAR.svg) no-repeat center;
+        width: 445px;
+        height: 700px;
+        margin: 10px auto;
+    }.noguerra div.gener, .noguerra h1.data, .noguerra div.calendar, .noguerra div.entername {display: none;}
+     
     .Fnoguerra div.System{
         background: url(./images/Conditionals/NOTWAR/DONOTGOTOWARWOMAN.svg) no-repeat center;
         width: 445px;
         height: 700px;
-        margin: 10px auto;
-    }.Fnoguerra div.gener, .Fnoguerra div.fullname, .Fnoguerra div.entername, .Fnoguerra div.calendar, .Fnoguerra div.Valid{display: none;}
+    }.Fnoguerra div.gener, .Fnoguerra div.fullname, .Fnoguerra div.entername, .Fnoguerra div.calendar{display: none;}
+    
+    .Fnoguerra div.Valid button, .guerra div.Valid button, .noguerra div.Valid button{
+        background: url(./images/Conditionals/GOTOWAR/BACK.svg);
+        display: inline-block;
+        position: absolute;
+        top: 700px;
+        height: 44px;
+        width: 231px; 
+    }
     div.gener{
         display: flex;
         flex-direction: row;
@@ -59,14 +72,18 @@
     }
     button.female {
         background: url(./images/Conditionals/Fem.svg) no-repeat center;
+        
     }button.female:hover{transform: scale(1.05)} button.female.check {
         background: url(./images/Conditionals/Femalecheck.svg) no-repeat center;
+        border: 2px solid greenyellow;
+        border-radius: 9%;
     }
     button.male {
         background: url(./images/Conditionals/Male.svg) no-repeat center;
     }button.male:hover{transform: scale(1.05)} button.male.check{
         background: url(./images/Conditionals/malecheck.svg) no-repeat center;
-        border: greenyellow;
+        border: 2px solid greenyellow;
+        border-radius: 9%;
     }
     /*INSERATR NOMBRE */
     div.fullname h1{
@@ -97,12 +114,12 @@
     }
     /*INSERATR FECHA DE NACIMIENTO */
 
-    div.calendar h1{
+    div.calendar h1.data{
         background: url(./images/Conditionals/h1\ Calendar.svg) no-repeat center;
         width: 205.09px;
         height: 24px;
     }
-    div.calendar div.enterbirthdate {
+    div.calendar div.fecha {
         background: url(./images/Conditionals/Calendar.svg) no-repeat center;
         width: 382px;
         height: 40px; 
@@ -122,6 +139,10 @@
         margin: 40px;
         transition: all 0.1s ease;
     }button.validate:hover{transform: scale(1.05)}
+    .guerra h1.edad, .noguerra h1.edad, .Fnoguerra h1.edad {
+        color: aliceblue;
+        font-family: 1.5rem;
+    }
     
     </style>
 </head>
@@ -132,7 +153,6 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
                     </svg>
-                    
             </a>
             <h1></h1>
         </header>
@@ -150,7 +170,8 @@
                 <br>
                 <div class="calendar">
                     <h1 class="data"></h1>
-                    <div class="enterbirthdate"><input class="date" type="date" required></div>
+                    <div class="fecha"><input class="fechaNacimiento" type="text" required></div>
+                    <h1 class="edad">sdlkgosmg</h1>
                 </div>
                 <br>
                 <br>
@@ -164,8 +185,8 @@
         var Bgenero = false
         var nameB = false
         var dateB = false
-
-
+        var consulteCheck = false
+        var edadFinal = 0
 
         const female = document.querySelector('button.female')
         const male = document.querySelector('button.male')
@@ -173,10 +194,12 @@
 
         const validate = document.querySelector('button.validate')
         const text = document.querySelector('input.text')
+        var edadEnter = document.querySelector('h1.edad')
+        //Back
+        var fecha = document.querySelector(parseInt('input.fechaNacimiento'))
         var name = ''
-        const date = document.querySelector('input.date')
-        
-
+        //EDAD
+    
         female.onclick = () =>{
             if (male.className != 'male check') {
                 if (Bgenero == false){
@@ -203,23 +226,43 @@
             
 
         }
+
+        var mainCheck = 
         validate.onclick = () =>{
-            if (male.className == 'male check' || female.className == 'female check'){
-                if (male.className == 'male check' ) {
+            if (male.classList.contains('check') || female.classList.contains('check')){
+                validate.classList.toggle('back')
+
+                if (male.classList.contains('check') && consulteCheck == false && parseInt(fecha) >= 18) {
                     main.classList.add('guerra')
-                    name = text.value
-                    h1.innerText = name
-                } else if (male.className == 'male check' ) {
+                    consulteCheck = true
+
+                }else if (male.classList.contains('check') && consulteCheck == false && parseInt(fecha) < 18) {
                     main.classList.add('noguerra')
-                    name = text.value
-                    h1.innerText = name
-                } else {
+                    consulteCheck=true
+                    
+                }else if (female.classList.contains('check') && consulteCheck == false){
                     main.classList.add('Fnoguerra')
-                    name = text.value
-                    h1.innerText = name
+                    consulteCheck=true
+                    
+                }else if (consulteCheck == true) {
+                    if(main.classList.contains('guerra')){
+                        main.classList.remove('guerra')
+                        validate.classList.remove('back')
+                    
+                    } else if (main.classList.contains('noguerra')){
+                        main.classList.remove('noguerra')
+                        validate.classList.remove('back')
+                    
+                    }else if (main.classList.contains('Fnoguerra')){
+                        main.classList.remove('Fnoguerra')
+                        validate.classList.remove('back')
+                    }
                 }
+            } else {
+                alert('Ingrese los datos')
             }
         }
+        
     </script>
 </body>
 </html>
