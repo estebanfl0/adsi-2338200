@@ -51,7 +51,7 @@
         background: url(./images/Conditionals/GOTOWAR/BACK.svg);
         display: inline-block;
         position: absolute;
-        top: 700px;
+        top: 75%;
         height: 44px;
         width: 231px; 
     }
@@ -170,7 +170,7 @@
                 <br>
                 <div class="calendar">
                     <h1 class="data"></h1>
-                    <div class="fecha"><input class="fechaNacimiento" type="text" required></div>
+                    <div class="fecha"><input class="fechaNacimiento" type="number" placeholder="Ingrese su edad" min="8" required></div>
                     <h1 class="edad">sdlkgosmg</h1>
                 </div>
                 <br>
@@ -194,10 +194,9 @@
 
         const validate = document.querySelector('button.validate')
         const text = document.querySelector('input.text')
-        var edadEnter = document.querySelector('h1.edad')
+        
         //Back
         var fecha = document.querySelector('input.fechaNacimiento')
-        var name = ''
         //EDAD
     
         female.onclick = () =>{
@@ -222,45 +221,52 @@
                 }
             } 
         }
-        function name () {
-            
 
-        }
 
         var mainCheck = 
         validate.onclick = () =>{
-            var num = parseInt(fecha.value)
-            if (male.classList.contains('check') || female.classList.contains('check')){
+            var num = fecha.value
+            var name = text.value
+            if ((male.classList.contains('check') || female.classList.contains('check')) && name != '' && num != ''){
                 validate.classList.toggle('back')
 
                 if (male.classList.contains('check') && consulteCheck == false && num >= 18) {
                     main.classList.add('guerra')
                     consulteCheck = true
+                    h1.innerHTML = name.value
 
                 }else if (male.classList.contains('check') && consulteCheck == false && num < 18) {
                     main.classList.add('noguerra')
                     consulteCheck=true
+                    h1.innerHTML = name.value
+
                     
                 }else if (female.classList.contains('check') && consulteCheck == false){
                     main.classList.add('Fnoguerra')
                     consulteCheck=true
+                    h1.innerHTML = name.value
+
                     
                 }else if (consulteCheck == true) {
                     if(main.classList.contains('guerra')){
                         main.classList.remove('guerra')
                         validate.classList.remove('back')
+                        location.reload()
                     
                     } else if (main.classList.contains('noguerra')){
                         main.classList.remove('noguerra')
                         validate.classList.remove('back')
+                        location.reload()
                     
                     }else if (main.classList.contains('Fnoguerra')){
                         main.classList.remove('Fnoguerra')
                         validate.classList.remove('back')
+                        location.reload()
+
                     }
                 }
             } else {
-                alert('Ingrese los datos')
+                alert('Ingrese todos los datos')
             }
         }
         
