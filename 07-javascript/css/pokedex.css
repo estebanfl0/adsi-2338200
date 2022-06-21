@@ -80,7 +80,7 @@ main.nav {
     background: url(../images/images-pokedex/menu-nav/bg-menu-select.svg);
 }
 div.navTitle {
-    background: url(../images/images-pokedex/title.svg)no-repeat;
+    background: url(../images/Pokapi/MAIN.svg)no-repeat;
     background-position: center;
     width: 420px;
     height: 40px;
@@ -101,7 +101,7 @@ div.card {
     border-radius: 25px;
     width: 95%;
     height: 150px;
-    background-color: #464646;
+    background-color: #ffffffc2;
 }
 .card div.info-content{
     margin: 16px auto;
@@ -117,11 +117,13 @@ div.card {
     border-radius: 10px;
     width: auto;
 }
-.card div.info-content p.normal,
-.card div.info-content p.none{
+.card div.info-content p.normal{
     background-color: #ffffff;
     width: 60px;
     text-align: center;
+}
+.card div.info-content p.none{
+    display: none;
 }
 .card div.info-content p.grass{
     background-color: #7DFFB1;
@@ -309,14 +311,16 @@ div.headerStats{
 }
 div.headerStats h1 {
     text-align: center;
+    ;
 }
 div.img{
-    background-color: white;
+    background-color: rgba(230, 128, 128, 0.658);
     border-radius: 100%;
     display: flex;
     justify-content: center;
     height: 250px;
     width: 250px;
+    margin-top: 50px;
 }
 div.img img {
     margin-top: 15px;
@@ -324,10 +328,13 @@ div.img img {
     width: 200px;
 }
 div.statics {
-    height: 300px;
+    height: 200px;
     width: 420px;
+    background-color: rgba(230, 128, 128, 0.658);
+    border-radius: 20px;
 }
 div.statics p {
+    
     margin-left: 5px;
     width: 400px;
 }
@@ -350,4 +357,7 @@ button.back {
 }
 button.back:hover {
     transform: scale(1.1);
+}
+progress{
+    background-color: red;
 }
