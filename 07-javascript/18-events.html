@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/menu.css">
+    <style>
+        section{
+            overflow-y: auto;
+            height: 500px;
+        }
+        h2{
+            background-color: rgba(255, 255, 255, 0.846);
+
+        }
+        div.block1{
+            background-color: none
+        }
+        div.block {
+            background-color: rgba(255, 255, 255, 0.603);
+            height: 50px;
+            margin: 10px 120px;
+            border-radius: 10px;
+            /* justify-content: center;
+            align-items: baseline;
+            display: flex; */
+            
+        }
+        button {
+            background-color:aquamarine;
+            margin: 10px auto;
+            align-items: center;
+            display: grid;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 2px;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        output {
+            margin: 10px auto;
+            text-align: center;
+            display: grid;
+        }
+        input, select, img {
+            margin: 10px auto;
+            align-items: center;
+            display: grid;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        img {
+            background-color: rgba(255, 255, 255, 0.603);
+            height: 200px;
+           cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="welcome()">
+    <main>
+        <header>
+            <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                    </svg>
+                    
+            </a>
+            <h1>Events</h1>
+        </header>
+        <section>
+            <h2>Page Load</h2>
+            <div class="block">
+                <output class="msj_load">Page no Load</output>
+            </div>
+
+            <h2> Double Click </h2>
+           <div class="block"> 
+                <button class="btn-dblclick">Double Click Me</button>
+                <output class="nums-dbclicks">0 clicks</output>
+            </div>
+            <h2> Release Key </h2>
+            <div class="block">
+                <input type="text" class="inp_keyup" maxlength="10">
+                <output class="msj-keyup"></output>
+            </div>
+            <h2> Resize window </h2>
+            <div class="block">
+                <output class="msj-resize">No Resize</output>
+                <output class="msj-resizeH">No Resize</output>
+            </div>
+            <h2> Change Value </h2>
+            <div class="block">
+                <select class="slt-change">
+                    <option value="" selected disabled>Select Color</option>
+                    <option value="#11111199">Reset</option>
+                    <option value="#ff000073">Red</option>
+                    <option value="#00ff0033">Green</option>
+                    <option value="#0000ff63">Blue</option>
+
+                </select>
+            </div>
+            <h2> Mouse (over/out) </h2>
+            <div class="block1">
+                <img src="./images/Gold.png" class="img-kakao">
+            </div>
+        </section>
+    </main>
+    <script>
+        //Elements
+        const msj_load = document.querySelector('.msj_load')
+        const btn_dblclick = document.querySelector('.btn-dblclick')
+        const nums_dbclicks = document.querySelector('.nums-dbclicks')
+        const inp_keyup = document.querySelector('.inp_keyup')
+        const msj_keyup = document.querySelector('.msj-keyup')
+        const msj_resize = document.querySelector('.msj-resize')
+        const msj_resizeh = document.querySelector('.msj-resizeH')
+
+        const mainbgc = document.querySelector('main')
+        const slt_change = document.querySelector('.slt-change')
+
+        const img_kakao = document.querySelector('.img-kakao')
+
+
+
+
+
+        var contadorclicks = 0
+        //Events 
+        btn_dblclick.ondblclick = function() {
+            contadorclicks++
+            nums_dbclicks.textContent = contadorclicks + ' clicks.'            
+        }
+
+        //keyup
+        inp_keyup.onkeyup = function() {
+            msj_keyup.value = this.value
+        }
+
+
+        //resize
+        window.onresize = function() {
+            msj_resize.textContent = 'Window Width: ' + window.outerWidth + 'px'
+            msj_resizeh.textContent = 'Window Height: ' + window.outerHeight + 'px'
+        }
+
+        //change 
+        slt_change.onchange = function() {
+            mainbgc.style.backgroundColor = this.value
+        }
+        //functions
+        function welcome() {
+            msj_load.textContent = 'The page was load!'
+        }
+
+
+        //mouse out / over
+        img_kakao.onmouseover = function() {
+            this.src = './images/image-removebg-preview (1).png'
+        }
+        img_kakao.onmouseout = function() {
+            this.src = './images/Gold.png'
+        }
+    </script>
+</body>
+</html>

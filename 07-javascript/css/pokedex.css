@@ -80,20 +80,27 @@ main.nav {
     background: url(../images/images-pokedex/menu-nav/bg-menu-select.svg);
 }
 div.navTitle {
-    background: url(../images/Pokapi/MAIN.svg)no-repeat;
+    background: url(../images/Pokapi/image\ 2.svg)no-repeat;
     background-position: center;
     width: 420px;
-    height: 40px;
+    height: 80px;
+    z-index: 1;
+    cursor: pointer;
+}
+div.navTitle:hover{
+    transform: scale(1.1);
+
 }
 div.navMenu {
     margin: 10px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 400px;
     height: 580px;
     overflow: auto;
+    
 }
 div.card {
     display: grid;

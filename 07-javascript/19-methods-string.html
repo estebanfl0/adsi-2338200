@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<style>
+    section{
+        background-color: rgba(255, 255, 255, 0.384);
+        width: 80%;
+        margin: 0px auto;
+        align-items: center;
+        display: grid;
+    }
+    textarea{
+        border-radius: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        display: flex;
+        margin: 15px auto;
+        height: 80px;
+        width: 60%;
+    }
+    div.options {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    input.area {
+        display: flex;
+        width: 30%;
+        margin: 12px auto;
+        align-items: center;
+        display: grid;
+    }
+    button.submit{
+        width: 40%;
+        margin: 12px auto;
+        align-items: center;
+        display: grid;
+        background-color: rgba(250, 178, 23, 0.829);
+        border-radius: 10px;
+        cursor: pointer ;
+    }
+    button.submit:hover{
+        transform: scale(1.1);
+    }
+    label {
+        margin: 0px 85px;
+        background-color: rgba(26, 116, 196, 0.589);
+        border-radius: 5px;
+    }
+    input.lower, input.uper {
+        cursor: pointer;
+    }
+    input.lower:hover, input.uper:hover{
+        transform: scale(1.2);
+    }
+    ul {
+
+    }
+</style>
+<body>
+    <main>
+        <header>
+            <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                    </svg>
+                    
+            </a>
+            <h1>M. Strings</h1>
+        </header>
+        <section>
+            <textarea class="textarea" cols="30" rows="10"></textarea>
+            <div class="options">
+                <label>
+                    <input type="radio" name="transform" value="1" class="lower">Lowercase
+                </label>
+                <label>
+                    <input type="radio" name="transform" value="2" class="uper">UPPERCASE
+                </label>
+                <input type="text" class = "area word-origin" placeholder="Word Origin">
+                <span> For </span>
+                <input type="text" class = "area word-replace" placeholder="Word Replace">
+                <input type="text" class = "area pos-start" placeholder="Pos Start">
+                <span> To </span>
+                <input type="text" class = "area pos-final" placeholder="Pos Final">
+            </div>
+            <button class="submit">Show string</button>
+            <ul class="result"></ul>
+        </section>
+    </main>
+    <script>
+    const textarea      = document.querySelector('.textarea')
+    const r_low         = document.querySelector('.lower')
+    const r_upp         = document.querySelector('.uper')
+    const word_origin   = document.querySelector('.word-origin')
+    const word_replace  = document.querySelector('.word-replace')
+    const pos_start     = document.querySelector('.pos-start')
+    const pos_final     = document.querySelector('.pos-final')
+    const btn_show      = document.querySelector('.submit')
+    const result        = document.querySelector('.result')
+
+
+    var upper = false
+
+    r_low.onclick = function() { upper = false}
+    r_upp.onclick = function() { upper = true}
+
+    btn_show.onclick = function() { 
+            if(textarea.value.length > 0) {
+                result.innerHTML = '<li> Original String: ' + textarea.value + '</li>'
+                result.innerHTML += '<li> Lenght String: ' + textarea.value.length + '</li>'
+                if(upper){
+                   result.innerHTML += '<li> Uppercase: ' + textarea.value.toUpperCase() + '</li>'
+   
+                }else{
+                   result.innerHTML += '<li> Lowercase: ' + textarea.value.toLowerCase() + '</li>'
+   
+                }
+                
+                result.innerHTML += '<li> Replacement String: ' + textarea.value.replace(word_origin.value, word_replace.value) + '</li>'
+                result.innerHTML += '<li> Cut String: ' + textarea.value.substring(parseInt(pos_start.value, 10), parseInt(pos_final.value)) + '</li>'
+
+            } else {
+                alert("Please! Write something")
+            } 
+
+    }
+
+
+    </script>
+</body>
+</html>
