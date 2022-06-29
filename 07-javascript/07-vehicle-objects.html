@@ -103,13 +103,10 @@
         }
         
         img.image{
-            
             background-size: contain;
             position: absolute;
             width: 380px;
             height: 230px;
-            top: 80px;
-            left: 20px;
             z-index: 5;
             transition: all 1s ease-in;
             
@@ -117,7 +114,12 @@
         /*Animation Start*/
         
         section img.start{
-            animation: animStart 0.25s ease infinite;
+            
+            animation: animStart 0.25s  infinite;
+            position: absolute;
+            width: 380px;
+            height: 230px;
+            z-index: 5;
         }
         @keyframes animStart {
             0%{top: 200px;}
@@ -269,6 +271,8 @@
         nav.controls button:hover{
             transform: scale(1.25);
         }
+
+
         /* @media(max-width:1024px){
             body{
                 width: 800px;
@@ -357,8 +361,8 @@
             attributes:[
                 {brand:'Wayne',    refer:'BatPlane',  model:'2020', color:'Black', image:'./images/ClearMode/BatPlaneFinal.png'},
                 {brand:'Ferrari',   refer:'testarossa',   model:'2019', color:'Red', image:'./images/DarkMode/RedCar.svg'},
-                {brand:'Chevrolet', refer:'Onix',   model:'2020', color:'Green',  image:'./images/ClearMode/car03.png'},
-                {brand:'Jeep',      refer:'Wrangler', model:'2020', color:'Orange',   image:'./images/DarkMode/carGreen.png'}
+                {brand:'Chevrolet', refer:'Onix',   model:'2020', color:'Green',  image:'./images/ClearMode/'},
+                {brand:'Jeep',      refer:'Wrangler', model:'2020', color:'Yellow',   image:'./images/DarkMode/carGreen.png'}
             ],
             //Methods
             ShowAttributes:function(index){
