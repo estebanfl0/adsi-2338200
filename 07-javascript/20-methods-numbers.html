@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/menu.css">
+    <style>
+    section{
+        background-color: rgba(255, 255, 255, 0.384);
+        width: 80%;
+        margin: 0px auto;
+        align-items: center;
+        display: grid;
+    }
+    
+    
+    button.submit{
+        cursor: pointer;
+        width: 40%;
+        margin: 12px auto;
+        align-items: center;
+        display: grid;
+        background-color: rgba(250, 178, 23, 0.829);
+        border-radius: 10px;
+        cursor: pointer ;
+    }
+    button.submit:hover{
+        transform: scale(1.1);
+    }
+    
+    input.lower:hover, input.uper:hover{
+        transform: scale(1.2);
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                    </svg>
+                    
+            </a>
+            <h1>M. Numbers</h1>
+        </header>
+        <section>
+            <input type="number" class="numb" placeholder="Enter Float Number">
+            <button class="submit">Calc</button>
+            <ul class="output"></ul>
+        </section>
+    </main>
+    <script>
+        // Elements
+        const numb      = document.querySelector('.numb')
+        const btn_calc  = document.querySelector('.submit')
+        const output    = document.querySelector('.output')
+
+        //EVENTS
+        btn_calc.addEventListener('click', function(){
+            let vnum = numb.value
+            //Let se usa para variables locales, en este caso solo una variable tipo let para el boton
+            if (is_float(vnum)) {
+                output.innerHTML = "<li> <b>String:</b> '"      +   vnum.toString()                     +     "'</li>"
+                output.innerHTML += "<li> <b>Integer:</b> '"    +   parseInt(vnum)                      +     "'</li>"
+                output.innerHTML += "<li> <b>Fixed:</b> '"      +   parseFloat(vnum).toFixed(0)         +     "'</li>"
+                output.innerHTML += "<li> <b>Precision:</b> '"  +   parseFloat(vnum).toPrecision(3)     +     "'</li>"
+                output.innerHTML += "<li> <b>Float::</b> '"     +   parseFloat(vnum)                    +     "'</li>"
+            }
+            else {
+                alert('You must enter a number (with decimals)')
+            }
+        })
+
+        //functions
+        function is_float(n) {
+            return !!(n % 1)
+        }
+    </script>
+    
+</body>
+</html>

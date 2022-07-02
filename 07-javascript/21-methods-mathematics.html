@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="css/menu.css">
+        <style>
+            /* section{
+                /* overflow-y: auto;
+                height: 600px; 
+            } */
+            h2{
+                background-color: rgba(119, 223, 133, 0.658);
+            }
+            button.btn_dice{
+                border: 4px solid black;
+                height: 100px;
+                width: 100px;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                font-size: 4rem;
+                margin: 12px auto;
+                align-items: center;
+                display: grid;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            button:hover{
+                transform: scale(1.1);
+            }
+            button.meal{
+                border: 4px solid black;
+                height: 100px;
+                width: 100px;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                margin: 12px auto;
+                align-items: center;
+                display: grid;
+                cursor: pointer;
+                border-radius: 10px;
+                font-weight: 1000;
+            }
+            button.reload{
+                border: 4px solid black;
+                height: 40px;
+                width: 100px;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                margin: 12px auto;
+                align-items: center;
+                display: grid;
+                cursor: pointer;
+                border-radius: 10px;
+                font-weight: 1000;
+            }button.reload:hover{
+                background-color: rgba(66, 228, 128, 0.815);
+            }
+            button.change{
+                font-size: 4rem;
+                border: 4px solid black;
+                height: 100px;
+                width: 100px;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                margin: 12px auto;
+                align-items: center;
+                display: grid;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            p{
+                text-align: center;
+                margin: 12px auto;
+                align-items: center;
+                display: grid;
+                font-weight: 100;
+                background-color: rgba(255, 255, 255, 0.562);
+                height: 20px;
+                width: 300px;
+            }
+        </style>
+    <body>
+        <main>
+            <header>
+                <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                        </svg>
+                        
+                </a>
+                <h1>M. Mathematics</h1>
+            </header>
+            <section>
+                <h2>Math.random (Roll A dice)</h2>
+                <button class="btn_dice">🍖</button>
+                <h2>Math.random (Colors)</h2>
+                <button class="meal">What do you are going to eat?</button>
+                <h2>Math.min | Math.max</h2>
+                <p class="out_min"></p>
+                <p class="out_max"></p>
+
+                <h2>Math (round|ceil|floor)</h2>
+                <p class="out_round"></p>
+                <p class="out_ceil"></p>
+                <p class="out_floor"></p>
+
+                <button class="reload">Reload</button>
+            </section>
+        </main>
+        <script>
+        //elements
+        const btn_dice = document.querySelector('.btn_dice')
+        const meal = ['🍔', '🍟', '🌭', '🍿', '🍤', '🥓', '🥯', '🥨', '🥐', '🥞', '🍳', '🌮']
+        
+        const btn_meal = document.querySelector('.meal')
+        const change = document.querySelector('.meal')
+
+        const out_min = document.querySelector('.out_min')
+        const out_max = document.querySelector('.out_max')
+
+        const out_round = document.querySelector('.out_round')
+        const out_ceil = document.querySelector('.out_ceil')
+        const out_floor = document.querySelector('.out_floor')
+
+        const reload = document.querySelector('.reload')
+
+        //events
+        btn_dice.addEventListener('click', function() {
+            let vdice = Math.ceil(Math.random() * 6)
+            
+            this.textContent = vdice
+        })
+
+        btn_meal.addEventListener('click', function() {
+            let vmeal = Math.floor(Math.random() * (meal.length - 1))
+            change.classList.remove('meal')
+            change.classList.add('change')
+
+            this.textContent = meal[vmeal]
+            
+        })
+
+        reload.addEventListener('click', function() {
+            location.reload()
+        })
+        //load
+        out_min.textContent = 'Min value (5, 16, -2, 8, 17, -7) = '+ Math.min(5, 16, -2, 8, 17, -7) 
+        out_max.textContent = 'Min value (5, 16, -2, 8, 17, -7) = '+ Math.max(5, 16, -2, 8, 17, -7) 
+        
+        //ROUND     |       CEIL        |       FLOOR |||
+        let fvalue = 6.12457
+        out_round.textContent = 'Math.round: ' + Math.round(fvalue)
+        out_ceil.textContent = 'Math.ceil: ' + Math.ceil(fvalue)
+        out_floor.textContent = 'Math.floor: ' + Math.floor(fvalue)
+
+
+        </script>
+    </body>
+</html>
