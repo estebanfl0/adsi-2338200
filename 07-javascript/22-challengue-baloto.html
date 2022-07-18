@@ -26,9 +26,8 @@
         display: grid;
         border: none;
         cursor: pointer;
-        position: relative;
-        top: -20px;
-    }button.title:hover{
+    }
+    button.title:hover{
         transform: scale(1.1);
     }
     div.body{
@@ -39,18 +38,123 @@
         align-items: center;
         display: grid;
         position: relative;
-        top: -70px;
+        top: -30px;
     }
-    div.choose{
+    p.choose{
         background: url(./images/Baloto/TitleSELECT.svg) no-repeat center;
-        height: 465px;
-        width: 398px;
+        height: 30px;
+        width: 310px;
         margin: 12px auto;
         align-items: center;
         display: grid;
         position: relative;
-        top: -70px;
+        top: 00px;
+        cursor:help ;
     }
+    div.menu{
+        background: url(./images/Baloto/menu.svg) no-repeat center;
+        width: 295px;
+        height: 150px;
+        margin: 12px auto;
+        align-items: center;
+        display:block;
+        position: relative;
+        bottom: 20px;
+        display: flex;
+        gap: 23px;
+    }
+    button.left{
+        background: url(./images/Baloto/ChangeLeft.svg) no-repeat center;
+        margin-left: 9px;
+    }
+    button.right, button.left { 
+        width: 55px;
+        height: 55px;
+        border: none;
+        cursor: pointer;
+    }
+    button.right:hover, button.left:hover{
+        transform: scale(1.1);
+    }
+    button.right{
+        background: url(./images/Baloto/ChangeRight.svg) no-repeat center;
+    }
+    p{
+        font-size: large;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    div.balotas{
+        background: url(./images/Baloto/BagBalls.svg) no-repeat center;
+        width: 375px;
+        height: 85px;
+        margin: 12px auto;
+        align-items: center;
+        display: grid;
+        position: relative;
+        bottom: 30px;
+        display: flex;
+        gap: 5px;
+    }
+    div.balota1,
+    div.balota2,
+    div.balota3,
+    div.balota4,
+    div.balota5 {
+        background: url(./images/Baloto/Balll.svg) no-repeat center;
+        width: 60px;
+        height: 60px;
+        flex-grow: 1;
+        display: grid;
+        place-content: center;
+        font-weight: 200;
+        color: #000000bd;
+        cursor:grabbing;
+        font-size: large;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    div.goldball{
+        background: url(./images/Baloto/DivGoldBall.svg) no-repeat center;
+        height: 70px;
+        width: 200px;
+        margin: 12px auto;
+        align-items: center;
+        display: grid;
+        position: relative;
+        top: -40px;
+    }
+    div.balota6{
+        background: url(./images/Baloto/GoldBall.svg) no-repeat center;
+        width: 75px;
+        height: 70px;
+        margin: 0px auto;
+        align-items: center;
+        display: grid;
+        place-content: center;
+        font-weight: 600;
+        color: #000000bd;
+        cursor:grabbing;
+        font-size: large;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    div.footer{
+        display: grid;
+        place-content: center;
+    }
+    button.play{
+        background: url(./images/Baloto/Play.svg) no-repeat center;
+        width: 250px;
+        height: 70px;
+        border: none;
+        position: relative;
+        top: -30px;
+        cursor: pointer;
+    }
+    button.play:hover{
+        transform: scale(1.1);
+    }
+    /*  <div class="footer">
+                <button class="play"></button>
+            </div> */
     </style>
 </head>
 <body>
@@ -66,23 +170,24 @@
         </header>
         <section>
             <div class="header">
-                <button class="title"></button>
+                <button onclick="miReload()"class="title"></button>
             </div>
             <div class="body">
-                <nav class="choose"></nav>
+                <p class="choose"></p>
                 <div class="menu">
                     <button class="left"></button>
+                    <p>Minecraft Theme</p>
                     <button class="right"></button>
                 </div>
                 <div class="balotas">
-                    <div class="balota1"></div>
-                    <div class="balota2"></div>
-                    <div class="balota3"></div>
-                    <div class="balota4"></div>
-                    <div class="balota5"></div>
+                    <div class="balota1">?</div>
+                    <div class="balota2">?</div>
+                    <div class="balota3">?</div>
+                    <div class="balota4">?</div>
+                    <div class="balota5">?</div>
                 </div>
                 <div class="goldball">
-                    <div class="balota6"></div>
+                    <div class="balota6">?</div>
                 </div>
             </div>
             <div class="footer">
@@ -90,6 +195,55 @@
             </div>
         </section>
     </main>
-    
+    <script>
+        const reload = document.querySelector('button.title')
+
+        function miReload(){
+            // alert()
+            location.reload()
+        }
+
+        //  A   L   E   T   O   R   I   E   D   A   D
+        const ball1 = document.querySelector('div.balota1')
+        const ball2 = document.querySelector('div.balota2')
+        const ball3 = document.querySelector('div.balota3')
+        const ball4 = document.querySelector('div.balota4')
+        const ball5 = document.querySelector('div.balota5')
+        const ball6 = document.querySelector('div.balota6')
+
+        const play = document.querySelector('button.play')
+        var validate = false
+        play.addEventListener('click', function() {
+            validate = true
+            if (validate == true) {
+                let vdice = Math.ceil(Math.random() * 42)
+            
+                ball1.textContent = vdice
+            }
+            if (validate == true) {
+                let vdice = Math.ceil(Math.random() * 42)
+            
+                ball2.textContent = vdice
+            }if (validate == true) {
+                let vdice = Math.ceil(Math.random() * 42)
+            
+                ball3.textContent = vdice
+            }if (validate == true) {
+                let vdice = Math.ceil(Math.random() * 42)
+            
+                ball4.textContent = vdice
+            }if (validate == true) {
+                let vdice = Math.ceil(Math.random() * 42)
+            
+                ball5.textContent = vdice
+            }if (validate == true) {
+                let vdice = Math.ceil(Math.random() * 16)
+            
+                ball6.textContent = vdice
+            }
+        })
+        
+
+    </script>
 </body>
 </html>
