@@ -184,6 +184,11 @@
         /*  <div class="footer">
                     <button class="play"></button>
                 </div> */
+        button.play:disabled{
+            filter: grayscale(1);
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
         </style>
     </head>
     <body>
@@ -241,49 +246,63 @@
             const ball6 = document.querySelector('div.balota6')
 
             const play = document.querySelector('button.play')
-            var validate = false
+
+            const menssage = document.querySelector('h3.menssage')
+            let contador = 0
+
             play.addEventListener('click', function() {
-                validate = true
-                if (validate == true) {
-                    let vdice = Math.ceil(Math.random() * 43)
-                
-                    ball1.textContent = vdice
-                }
-                if (validate == true) {
-                    let vdice = Math.ceil(Math.random() * 43)
-                
-                    ball2.textContent = vdice
-                }if (validate == true) {
-                    let vdice = Math.ceil(Math.random() * 43)
-                
-                    ball3.textContent = vdice
-                }if (validate == true) {
-                    let vdice = Math.ceil(Math.random() * 43)
-                
-                    ball4.textContent = vdice
-                }if (validate == true) {
-                    let vdice = Math.ceil(Math.random() * 43)
-                
-                    ball5.textContent = vdice
-                }if (validate == true) {
-                    let vdice = Math.ceil(Math.random() * 16)
-                
-                    ball6.textContent = vdice
-                }
-                    ball1.classList.toggle('animation')
-                    ball2.classList.toggle('animation2')
-                    ball3.classList.toggle('animation3')
-                    ball4.classList.toggle('animation4')
-                    ball5.classList.toggle('animation5')
-                    ball6.classList.toggle('animation6')
+                if (contador <= 0) {
+                        validate = true
+                        play.setAttribute('disabled', 'disabled')
+                    if (validate == true) {
+                        let vdice = Math.ceil(Math.random() * 43)
+                    
+                        ball1.textContent = vdice
+                    }
+                    if (validate == true) {
+                        let vdice = Math.ceil(Math.random() * 43)
+                    
+                        ball2.textContent = vdice
+                    }if (validate == true) {
+                        let vdice = Math.ceil(Math.random() * 43)
+                    
+                        ball3.textContent = vdice
+                    }if (validate == true) {
+                        let vdice = Math.ceil(Math.random() * 43)
+                    
+                        ball4.textContent = vdice
+                    }if (validate == true) {
+                        let vdice = Math.ceil(Math.random() * 43)
+                    
+                        ball5.textContent = vdice
+                    }if (validate == true) {
+                        let vdice = Math.ceil(Math.random() * 16)
+                    
+                        ball6.textContent = vdice
+                    }
+                        ball1.classList.toggle('animation')
+                        ball2.classList.toggle('animation2')
+                        ball3.classList.toggle('animation3')
+                        ball4.classList.toggle('animation4')
+                        ball5.classList.toggle('animation5')
+                        ball6.classList.toggle('animation6')
+
+                        setTimeout(function() {
+                            alert('W I N N E R')
+                            setInterval(function() {
+                                ball6.classList.toggle('animation8')
+                                
+                            }, 200)
+                        }, 4500);    
+                    contador++   
 
                     setTimeout(function() {
-                        alert('W I N N E R')
-                        setInterval(function() {
-                            ball6.classList.toggle('animation8')
-                            
-                        }, 200)
-                    }, 4500);       
+                        play.removeAttribute('disabled')
+                    }, 5500);
+
+                } else {
+                    alert('Please, click the title, for reload this page')
+                }
 
             })
             
@@ -294,14 +313,19 @@
             const vehicle={
             //attributes
             attributes:[
-                {name:'Minecraft Balls', balls:'./images/Baloto/Balll.svg', ball6:'./images/Baloto/GoldBall.svg'},
-                {name:'Dragon Balls', balls:'', ball6:''},
-                {name:'Billar Balls', balls:'', ball6:''}
+                {name:'Minecraft Balls', ball1:'./images/Baloto/Balll.svg', ball2:'./images/Baloto/Balll.svg',ball3:'./images/Baloto/Balll.svg', ball4:'./images/Baloto/Balll.svg',ball5:'./images/Baloto/Balll.svg', ball6:'./images/Baloto/GoldBall.svg'},
+                {name:'Dragon Balls', ball1:'./images/Baloto/OrangeBalls.svg',ball2:'./images/Baloto/OrangeBalls.svg',ball3:'./images/Baloto/OrangeBalls.svg', ball4:'./images/Baloto/OrangeBalls.svg',ball5:'./images/Baloto/OrangeBalls.svg', ball6:'./images/Baloto/RedBalls.svg'},
+                {name:'Billar Balls', ball1:'./images/Baloto/OrangeBalls.svg',ball2:'./images/Baloto/OrangeBalls.svg',ball3:'./images/Baloto/OrangeBalls.svg', ball4:'./images/Baloto/OrangeBalls.svg',ball5:'./images/Baloto/OrangeBalls.svg', ball6:'./images/Baloto/EightBall.svg'}
             ],
             ShowAttributes:function(index){
                 name.innerText = this.attributes[index].name
-                balls.setAttribute('src',this.attributes[index].balls)
-                goldball.setAttribute('src',this.attributes[index].goldball)
+                ball1.setAttribute('src',this.attributes[index].ball1)
+                ball2.setAttribute('src',this.attributes[index].ball2)
+                ball3.setAttribute('src',this.attributes[index].ball3)
+                ball4.setAttribute('src',this.attributes[index].ball4)
+                ball5.setAttribute('src',this.attributes[index].ball5)
+
+                ball6.setAttribute('src',this.attributes[index].ball6)
             }
         }
         const btnPrev = document.querySelector('button.left')
