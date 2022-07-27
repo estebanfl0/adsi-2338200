@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/menu.css">
+    <style>
+        section.header {
+            background: url(./images/ChallengeArrays/Background.svg) no-repeat center;
+            background-color: rgb(128, 18, 18);
+            width: 500px;
+            height: 700px;
+            margin: 12px auto;
+            align-items: center;
+            display: grid;
+            position: relative;
+            border-radius: 20px;
+            top: -10px;
+            overflow: hidden;
+        }
+        button.title{
+            background: url(./images/ChallengeArrays/Title.svg) no-repeat center;
+            width: 430px;
+            height: 100px;
+            margin: 0px auto;
+            align-items: center;
+            display: grid;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            top: -15px;
+        }button.title:hover{
+            background: url(./images/ChallengeArrays/titlered.svg) no-repeat center;
+            filter: grayscale(0.3);
+
+        }
+        div.first{
+            position: relative;
+            right: -25px;
+            top: -25px;
+        }
+        div.option{
+            background: url(./images/ChallengeArrays/option.svg) no-repeat center;
+            width: 203px;
+            height: 32px;
+            margin: -10px 25px auto;
+        }
+        section.content{
+            background: url(./images/ChallengeArrays/content.svg) no-repeat center;
+            height: 390px;
+            width: 425px;
+            margin: 0px auto;
+            align-items: center;
+            display: grid;
+            position: relative;
+            top: -30px;
+            border: 4px solid black;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        div.select{
+            background: url(./images/ChallengeArrays/section\ select.svg) no-repeat center;
+            height: 130px;
+            width: 270px;
+            margin: 0px auto;
+            align-items: center;
+            display: grid;
+            position: relative;
+            right: 55px;
+        }
+        div.choose{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        button.chose{
+            height: 80px;
+            width: 80px;
+            margin: 0px auto;
+            align-items: center;
+            filter: grayscale(0.7);
+            margin: 0 20px;
+            cursor: pointer;
+            border: none;
+
+        }
+        button.one:hover, button.two:hover, button.three:hover,button.four:hover,button.five:hover,button.six:hover{
+            transform: scale(1.1);
+            filter: grayscale(0.0);
+        }
+        button.on{
+            filter: grayscale(0.0);
+        }
+        button.one{
+            background: url(./images/ChallengeArrays/hotdog.svg) no-repeat center;
+        }
+        button.two{
+            background: url(./images/ChallengeArrays/hamburger.svg) no-repeat center;
+        }
+        button.three{
+            background: url(./images/ChallengeArrays/taco.svg) no-repeat center;
+        }
+        button.four{
+            background: url(./images/ChallengeArrays/pizza.svg) no-repeat center;
+        }
+        button.five{
+            background: url(./images/ChallengeArrays/coffee.svg) no-repeat center;
+        }
+        button.six{
+            background: url(./images/ChallengeArrays/cupcake.svg) no-repeat center;
+        }
+        p{
+            font-size: large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 5px 5px auto;
+            align-items: center;
+            display: grid;
+        }
+        div.mddle{
+            display: flex;
+            flex-wrap:wrap;
+            position: relative;
+
+        }
+        button.start, button.end, input.add{
+            width: 135px;
+            height: 25px;
+            position: relative;
+            left: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input.add{
+            font-size:medium;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            align-items: center;
+            display: grid;
+            text-align: center;
+            outline: none;
+        }
+        button.start:hover, button.end:hover{
+            transform: scale(1.1);
+            background: url(./images/ChallengeArrays/select.svg) no-repeat center;
+        }
+        button.start{
+            background: url(./images/ChallengeArrays/start.svg) no-repeat center;
+            font-size: medium;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        button.end{
+            background: url(./images/ChallengeArrays/end.svg) no-repeat center;
+            font-size: medium;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        input.add{
+            background: url(./images/ChallengeArrays/input.svg) no-repeat center;
+        }
+        button.add, button.delete{
+            width: 60px;
+            height: 60px;
+            border: none;
+            
+        }
+        div.action{
+            display: grid;
+            gap: 10px;
+            margin-right: 10px;
+        }
+        button.add{
+            background: url(./images/ChallengeArrays/plus.svg) no-repeat center;
+            cursor: pointer;
+        }
+        button.delete{
+            background: url(./images/ChallengeArrays/less.svg) no-repeat center;
+            cursor: pointer;
+            
+        }
+        button.add:hover {
+            transform: scale(1.2);
+            background: url(./images/ChallengeArrays/plusgreen.svg) no-repeat center;
+        }
+        button.delete:hover{
+            transform: scale(1.2);
+            background: url(./images/ChallengeArrays/lessred.svg) no-repeat center;
+        }
+        div.result{
+            background: url(./images/ChallengeArrays/result.svg) no-repeat center;
+            width: 472px;
+            height: 142px;
+            position: relative;
+            top: -25px;
+            left: 15px;
+        }
+        button.select{
+            background: url(./images/ChallengeArrays/select.svg) no-repeat center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                    </svg>
+                    
+            </a>
+            <h1></h1>
+        </header>
+        <section class="header">
+            <button class="title"></button>
+            <div class="first option">
+                <p> Select your Food</p>
+            </div>
+            <section class="content">
+                <div class="choose">
+                    <button class="chose one"></button>
+                    <button class="chose two"></button>
+                    <button class="chose three"></button>
+                    <button class="chose four"></button>
+                    <button class="chose five"></button>
+                    <button class="chose six"></button>
+                </div>
+                <br>
+                <div class="second option">
+                    <p> Select Position</p>
+                </div>
+
+                <div class="mddle">
+                    <div class="select">
+                        <button class="start">Begin</button>
+                        <button class="end">Lastone</button>
+                        <input type="number" class="add" min="0" placeholder="Into Number">
+                    </div>
+                    <div class="action">
+                        <button class="add"></button>
+                        <button class="delete"></button>
+                    </div>
+                </div>
+            </section>
+            <div class="result">
+                <img src="" alt="">
+            </div>
+        </section>
+    </main>
+    <script>
+            const title = document.querySelector('button.title')
+            var icon
+            title.addEventListener('click', function() {
+                location.reload()
+            })
+
+        var img = '0000'
+
+        var activate = false
+
+        const chose = document.querySelectorAll('.chose')
+        chose.forEach(element => {
+            element.addEventListener('click', (e) => {
+                removeAnimation()
+                element.classList.add('on')
+                activate = true
+                icon = element.classList[1]
+                switch (icon) {
+                    case 'one':
+                        img = './images/ChallengeArrays/hotdog.svg'
+                        break;
+                    case 'two':
+                        img = './images/ChallengeArrays/hamburger.svg'
+                        break;
+                    case 'three':
+                        img = './images/ChallengeArrays/taco.svg'
+                        break;
+                    case 'four':
+                        img = 'http://127.0.0.1:5501/images/ChallengeArrays/pizza.svg'
+                        break;
+                    case 'five':
+                        img = './images/ChallengeArrays/coffee.svg'
+                        break;
+                    case 'six':
+                        img = './images/ChallengeArrays/cupcake.svg'
+                        break;
+                        selectionIcon = img
+                    
+                }
+            })
+        })
+
+        var image = document.querySelector('img')
+        function AddImage() {
+            image.setAttribute('src',img)
+        }
+        function removeAnimation() {
+            chose.forEach(element => {
+                element.classList.remove('on')
+            })
+        }
+        function AddImage() {
+                    image.setAttribute('src',img)
+                }   
+        
+        const start = document.querySelector('button.start')
+        var startB = false
+
+        start.addEventListener('click', function() {
+            start.classList.toggle('select')
+            startB = true
+            lastB = false
+            last.classList.remove('select')
+        })
+
+        const last = document.querySelector('button.end')
+        var lastB = false
+        last.addEventListener('click', function() {
+            last.classList.toggle('select')
+            lastB = true
+            startB = false
+            start.classList.remove('select')
+        })
+        
+        const plus = document.querySelector('button.add')
+        plus.addEventListener('click', function() {
+            if (activate == true) {
+                if (startB == true || lastB == true) {
+                    
+                AddImage()
+
+                } else {
+                    alert('Please! Select position')
+                }
+            } else {
+                alert('Please! Select Someone icon food')
+            }
+        })
+        var vectorAlmacenamiento = []
+        var selectionIcon 
+
+    </script>
+    
+</body>
+</html>
